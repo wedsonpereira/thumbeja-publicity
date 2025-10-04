@@ -17,7 +17,7 @@ const Header = () => {
         // }
 
     return (
-        <div className="tp-header h-[7rem] sticky z-50 border-b w-[100vw]">
+        <div className="tp-header h-[7rem] sticky z-50 border-b w-[100vw] ">
             <div className="tp-header-left">
                 <div className={"tp-image"}>
                         <img src={thumbeja} className={"tp-logo"} alt="text" onClick={imageClickHandler} />
@@ -43,13 +43,12 @@ const Header = () => {
                     <span></span>
                 </label>
 
-                <ul className="menu__box">
+                <ul className="menu__box rounded-b-full">
                     <li><a className="menu__item" href="/">Home</a></li>
                     <li><a className="menu__item" href="/services">Services</a></li>
                     <li><a className="menu__item" href="/contact">Contact Us</a></li>
                     <li><a className="menu__item" href="/career">Career</a></li>
                     <li><a className="menu__item" href="#aboutus">About us</a></li>
-
                 </ul>
             </div>
 

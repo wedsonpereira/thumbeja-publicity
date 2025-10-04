@@ -61,7 +61,8 @@
 
 @media (max-width: 800px) {
     .tp-contact-main{
-        margin-top: 5em;
+        height: auto ;
+        padding-top: 3rem ;
     }
 
     .tp-contact-header{

@@ -68,7 +68,7 @@ const Contact = () => {
 
     return (<>
             <Header/>
-            <div ref={container} className={"tp-contact-main mt-[7em] pt-24 flex items-center flex-col gap-6 w-full h-max bg-[#fefdf7] p-2"}>
+            <div ref={container} className={"tp-contact-main pt-24 flex items-center flex-col gap-6 w-full h-[100lvh] bg-[#fefdf7] p-2"}>
                 <div className={"tp-contact-header w-full h-[15%] flex gap-6 flex-col"}>
                     <div className={"w-full flex items-center justify-center"}>
                         <span>Contact Us</span>

@@ -9,14 +9,16 @@ import TermsConditions from "./Components/TermsConditions/Terms&Conditions.jsx";
 function App() {
 
   return (
+      <>
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/career" element={<Career />} />
+              <Route path="/info" element={<TermsConditions />} />
+          </Routes>
+      </>
 
-      <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/career" element={<Career />} />
-          <Route path="/info" element={<TermsConditions />} />
-      </Routes>
   )
 }
 

@@ -1,8 +1,8 @@
 @media (max-width: 800px) {
     .tp-career-main {
-        margin-top: 5rem;
         width: 100%;
-        border: 1px solid red;
+        /*border: 1px solid red;*/
+        height: auto;
 
         .tp-career0{
             width: 100%;

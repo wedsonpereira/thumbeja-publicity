@@ -144,13 +144,16 @@
         display: flex;
         flex-direction: column;
         background: white;
-        height:100lvh;
+        height: max-content;
         /*border:1px solid red;*/
         gap: 2rem;
+        padding-bottom:4rem;
+
 
         .tp-home-header-1 {
             font-size: 2.2rem;
             /*line-height: 1.2;*/
+
         }
 
         .tp-home-header-btn {
@@ -179,9 +182,12 @@
 
     /* Second container*/
     .tp-content {
-        height:120lvh;
+        max-height:max-content ;
+        height: max-content;
         width: 100%;
         /*border: 1px solid green;*/
+        overflow: hidden;
+        padding-bottom:4rem;
 
         .tp-content-header-1 {
             width: 100%;
@@ -220,10 +226,10 @@
 
     /* third container*/
     .tp-content-services {
-        height:150lvh;
+        height:max-content;
         flex-direction: column;
         width: 93%;
-        padding-top: 3rem;
+        padding-bottom: 3rem;
 
 
         .tp-content-header-2 {
@@ -321,9 +327,8 @@
 
     /*    forth container*/
     .tp-content-features {
-        height:180lvh;
-        margin: 3rem auto;
-        /*border:1px solid red;*/
+        height:150lvh;
+        padding-bottom: 3rem;
         width: 93%;
     }
 
@@ -446,7 +451,11 @@
 /*    Sixth Container*/
     .tp-content-whychooseus{
         /*padding-top: 3rem;*/
-        height:110lvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*border: 1px solid red;*/
+        height:120lvh;
         margin: 3rem auto;
         width: 93%;
         .tp-content-whychooseus0{

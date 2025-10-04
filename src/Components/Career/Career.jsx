@@ -15,7 +15,7 @@ const Career = () => {
     return (
         <>
             <Header/>
-            <div className={"tp-career-main mt-[7em] h-max flex flex-col  items-center bg-[#fefdf7] pb-8 gap-10"}>
+            <div className={"tp-career-main h-max flex flex-col  items-center bg-[#fefdf7] pb-8 gap-10"}>
                 <div className={"tp-career0 w-[70%] text-center flex flex-col h-max gap-5 pt-20 items-center"}>
                     <span>------Career Page-------</span>
                     <span className={"text-5xl font-semibold text-[#130059]"}>Let's build something together for the upcoming future</span>

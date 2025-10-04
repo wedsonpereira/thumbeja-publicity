@@ -1,6 +1,6 @@
 import React from 'react';
 import thumbejalogo from '/src/assets/Images/thunbejalogo.png'
-import {faFacebook, faInstagram, faSnapchat, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook, faInstagram, faLinkedin, faSnapchat, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link} from "react-router-dom";
 import {faArrowUp} from "@fortawesome/free-solid-svg-icons";
@@ -27,10 +27,10 @@ const Footer = () => {
                             <span className={"text-4xl"}>Reach us @</span>
                         </div>
                         <div className={"flex gap-3 border-1 w-max p-2 rounded"}>
-                            <FontAwesomeIcon icon={faFacebook} size="lg"/>
-                            <FontAwesomeIcon icon={faInstagram} size="lg"/>
-                            <FontAwesomeIcon icon={faWhatsapp} size="lg"/>
-                            <FontAwesomeIcon icon={faSnapchat} size="lg"/>
+                            <a href="https://www.facebook.com/share/17UorZadV3/?mibextid=wwXIfr"><FontAwesomeIcon icon={faFacebook} size="lg"/></a>
+                            <a href="https://www.instagram.com/thumbeja_publicity?igsh=NGF3OTc1bTM1czds"><FontAwesomeIcon icon={faInstagram} size="lg"/></a>
+                            <a href=""><FontAwesomeIcon icon={faWhatsapp} size="lg"/></a>
+                            <a href=""><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
                         </div>
                     </div>
                 </div>

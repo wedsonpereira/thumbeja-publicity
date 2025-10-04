@@ -20,7 +20,7 @@ const Services = () => {
     return (
         <>
             <Header />
-            <div className={"mt-[7em] h-max pb-8 pt-15 flex flex-col items-center bg-[#fefdf7] w-full"}>
+            <div className={" h-max pb-8 pt-15 flex flex-col items-center bg-[#fefdf7] w-full"}>
                 {/*services header */}
                 <div className={"m-0 flex items-center h-max justify-center w-[100%] flex-col"}>
                     <div className={"w-max h-max p-4 items-center justify-center"}>

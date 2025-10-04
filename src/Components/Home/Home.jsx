@@ -16,12 +16,8 @@ import {useEffect} from "react";
 import gsap from "gsap";
 import {useGSAP} from "@gsap/react";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-import {SwiperSlide,Swiper} from "swiper/react"
 import "swiper/css"
-import {A11y, Autoplay, EffectFade, FreeMode, Navigation, Pagination, Parallax, Scrollbar, Zoom} from "swiper/modules";
-import carousal1 from "/src/assets/Images/carousal1.jpg"
-import carousal2 from "/src/assets/Images/carousal2.jpg"
-import carousal3 from "/src/assets/Images/carousal3.jpg"
+
 
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
@@ -71,7 +67,7 @@ const Home = () => {
     return (
         <>
             <Header/>
-            <div className={'tp-home w-full bg-[#fefdf7] pt-[7rem]'}>
+            <div className={'tp-home w-full bg-[#fefdf7]'}>
                 {/*<Swiper spaceBetween={50} slidesPerView={1} pagination={{clickable: true}} autoplay={true} effect={"cube"} modules={[Navigation,Autoplay,EffectFade,A11y,Scrollbar,Pagination]} className={"h-[90%] w-[90%] rounded-4xl"}>*/}
                 {/*    <SwiperSlide className={"flex border-red-600"}>*/}
                 {/*        <div className={"w-full h-full flex items-center justify-center"}>*/}
@@ -140,7 +136,7 @@ const Home = () => {
                 </div>
             </div>
             {/*2st content starting*/}
-            <div className={"tp-content-services flex items-center w-[85%] m-auto mt-0 mb-0 flex-col h-[80lvh] justify-center gap-10"}>
+            <div className={"tp-content-services flex items-center w-[90%] m-auto mt-0 mb-0 flex-col h-[85lvh] justify-center gap-10"}>
                 <div className={"tp-content-header-2 h-max p-2 flex items-center justify-evenly gap-10"}>
                     <div className={"w-[45%] h-[10rem] p-2 flex flex-col  justify-center gap-10 "}>
                         <span className={"text-lg"}>Our Services -------------------</span>
@@ -195,7 +191,7 @@ const Home = () => {
             </div>
 
             <div
-                className={"tp-content-features h-[70lvh] w-[85%] m-auto mt-[7rem] flex items-center justify-center text-white select-none "}>
+                className={"tp-content-features h-[70lvh] w-[90%] m-auto mt-[7rem] flex items-center justify-center text-white select-none "}>
                 <div
                     className={"m-auto w-[85%] h-max bg-[#00001d] rounded-4xl flex items-center justify-evenly tp-home-serv-sect border-1"}>
                     <div className={"tp-content-features0 w-[50%] h-max flex flex-col gap-1"}>
