@@ -62,7 +62,7 @@
 .tp-left-compo {
     width: 40%;
     height: 100%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     position: absolute;
 }
 
@@ -144,7 +144,7 @@
         display: flex;
         flex-direction: column;
         background: white;
-        height: max-content;
+        height:100%;
         /*border:1px solid red;*/
         gap: 2rem;
         padding-bottom:4rem;
@@ -167,7 +167,7 @@
             .banner {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
 
             .tp-home-img-1 {
@@ -182,10 +182,8 @@
 
     /* Second container*/
     .tp-content {
-        max-height:max-content ;
-        height: max-content;
+        height:100%;
         width: 100%;
-        /*border: 1px solid green;*/
         overflow: hidden;
         padding-bottom:4rem;
 
@@ -226,7 +224,8 @@
 
     /* third container*/
     .tp-content-services {
-        height:max-content;
+        /*max-height:max-content ;*/
+        height:100%;
         flex-direction: column;
         width: 93%;
         padding-bottom: 3rem;
@@ -327,7 +326,8 @@
 
     /*    forth container*/
     .tp-content-features {
-        height:150lvh;
+        /*border: 1px solid red;*/
+        height:100%;
         padding-bottom: 3rem;
         width: 93%;
     }
@@ -369,8 +369,8 @@
 /*    Fifth container*/
 
     .tp-content-process{
-        overflow: hidden;
-        height:150lvh;
+
+        height:100%;
         width: 90%;
         gap: 1rem;
         margin: 2rem auto;
@@ -455,7 +455,7 @@
         align-items: center;
         justify-content: center;
         /*border: 1px solid red;*/
-        height:120lvh;
+        height:100%;
         margin: 3rem auto;
         width: 93%;
         .tp-content-whychooseus0{

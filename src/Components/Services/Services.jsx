@@ -7,7 +7,11 @@ import {faArrowRight, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 import mountain from "/src/assets/Images/Gemini_Generated_Image_su9pixsu9pixsu9p.png"
 import servicesData from "../../assets/JsonData/ServicesData.js";
 import {useNavigate} from "react-router-dom";
+import gsap from "gsap";
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+import {useGSAP} from "@gsap/react";
 
+gsap.registerPlugin(ScrollTrigger)
 const Services = () => {
 
     const navigate = useNavigate();
@@ -16,6 +20,19 @@ const Services = () => {
         navigate("/contact");
     }
 
+    useGSAP(()=>{
+        gsap.from(".tp-service-animation-1", {x: -200, opacity: 0})
+
+        gsap.from(".tp-service-animation-2", {y: -200, opacity: 0,stagger:0.2, delay: 0.4})
+
+        gsap.from(".tp-service-animation-3", {y: -100, opacity: 0,
+            scrollTrigger:{
+                trigger: '.tp-service-animation-3',
+                toggleActions: 'restart none none none',
+                scrub:true,
+            }})
+
+    })
 
     return (
         <>
@@ -23,15 +40,15 @@ const Services = () => {
             <div className={" h-max pb-8 pt-15 flex flex-col items-center bg-[#fefdf7] w-full"}>
                 {/*services header */}
                 <div className={"m-0 flex items-center h-max justify-center w-[100%] flex-col"}>
-                    <div className={"w-max h-max p-4 items-center justify-center"}>
+                    <div className={"w-max h-max p-4 items-center justify-center tp-service-animation-1"}>
                         <span>----------Our services----------</span>
                     </div>
-                    <div className={"w-[100%] h-max p-4 flex justify-center items-center text-800px"}>
+                    <div className={"w-[100%] h-max p-4 flex justify-center items-center text-800px tp-service-animation-1"}>
                         <span className={"text-[3rem] text-[#091e42] font-semibold text-center "}>
                             Introducing Our All-in-One Digital Services
                         </span>
                     </div>
-                    <div className={"w-[100%] text-center h-max p-4 text-800px"}>
+                    <div className={"w-[100%] text-center h-max p-4 text-800px tp-service-animation-1"}>
                         <p className={"text-2xl text-neutral-500 w-[80%] m-auto"}>
                             We offer printing, design, web development, hosting, chatbots, and photo editing.
                             Our services also include social media marketing to grow your brand.
@@ -44,7 +61,7 @@ const Services = () => {
                     {
                         servicesData.map((service, index) => {
                             return (
-                                <div key={index} className={"services-card-container w-[23rem] h-[28rem]"}>
+                                <div key={index} className={"services-card-container w-[23rem] h-[28rem] tp-service-animation-2"}>
                                     <div className={"services-card-container-inner tp-serv-card grid grid-cols-2 grid-rows-[30%_70%] h-[100%] rounded-2xl"}>
                                         <div className="flex items-center h-full justify-center">
                                             <img src={service.svg} alt="Service Image" className={"service-container-inner-img"} />
@@ -79,12 +96,12 @@ const Services = () => {
 
                 </div>
             </div>
-            <div className={"tp-get-in-touch h-[20em] m-auto w-[80%] rounded-3xl mb-20 mt-20 relative bg-[#5D47ACCF] overflow-hidden"}>
-                <div>
+            <div className={"tp-get-in-touch h-[20em] m-auto w-[80%] rounded-3xl mb-20 mt-20 relative bg-[#5D47ACCF] overflow-hidden tp-service-animation-3"}>
+                <div className={""}>
                     <img className={"w-full h-full object-cover absolute -z-10"} src={mountain} alt=""/>
                 </div>
 
-                <div className={" w-[100%] h-[100%] z-10 flex flex-col items-center justify-center text-800px text-center"}>
+                <div className={" w-[100%] h-[100%] z-10 flex flex-col items-center justify-center text-800px text-center tp-service-animation-3"}>
                     <span className={"text-5xl font-semibold top-1 z-30 p-8 flex flex-col items-center justify-center text-white"}>
                         You have a project. We can take it to another level
                     </span>

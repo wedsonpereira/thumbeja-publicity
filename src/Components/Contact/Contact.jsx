@@ -21,7 +21,7 @@ const Contact = () => {
         window.open(item.url);
     }
 
-    const container = useRef()
+    const container = useRef('')
 
     useGSAP(() => {
 
@@ -68,7 +68,7 @@ const Contact = () => {
 
     return (<>
             <Header/>
-            <div ref={container} className={"tp-contact-main pt-24 flex items-center flex-col gap-6 w-full h-[100lvh] bg-[#fefdf7] p-2"}>
+            <div ref={container} className={"tp-contact-main pt-24 flex items-center flex-col gap-6 w-full h-max  bg-[#fefdf7] pb-8"}>
                 <div className={"tp-contact-header w-full h-[15%] flex gap-6 flex-col"}>
                     <div className={"w-full flex items-center justify-center"}>
                         <span>Contact Us</span>
@@ -112,7 +112,7 @@ const Contact = () => {
                     <div className={"tp-contact-dtl pt-9"}>
                         <div className={"flex items-center gap-3 p-2"}>
                             <FontAwesomeIcon icon={faLocationDot}/>
-                            <span className={"w-[70%] hover:text-blue-300 transition-shadow"}>4517 Washington Ave. Manchester, Kentucky 39495</span>
+                            <span className={"w-[70%] hover:text-blue-300 transition-shadow"}>Address</span>
                         </div>
                         <div className={"flex items-center gap-3 p-2 "}>
                             <FontAwesomeIcon icon={faPhone}/>
