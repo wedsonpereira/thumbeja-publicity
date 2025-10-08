@@ -29,8 +29,8 @@ const Contact = () => {
 
         gsap.from('.tp-contact-card', {
             duration: 1,
-            stagger: {from: "center", each: 0.3}, yoyo: true, opacity: 0, ease: 'expo.in'
-
+            stagger: {
+                from: "center", each: 0.3}, yoyo: true, opacity: 0, ease: 'expo.in'
         });
 
 
