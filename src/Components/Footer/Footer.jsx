@@ -30,7 +30,7 @@ const Footer = () => {
                             <a href="https://www.facebook.com/share/17UorZadV3/?mibextid=wwXIfr"><FontAwesomeIcon icon={faFacebook} size="lg"/></a>
                             <a href="https://www.instagram.com/thumbeja_publicity?igsh=NGF3OTc1bTM1czds"><FontAwesomeIcon icon={faInstagram} size="lg"/></a>
                             <a href="https://wa.me/916366983700"><FontAwesomeIcon icon={faWhatsapp} size="lg"/></a>
-                            <a href="linkedin.com/in/thumbeja-publicity-267636387"><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
+                            <a href="https://linkedin.com/in/thumbeja-publicity-267636387"><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
                         </div>
                     </div>
                 </div>
