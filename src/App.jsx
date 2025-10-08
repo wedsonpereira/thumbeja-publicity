@@ -5,11 +5,14 @@ import {Routes,Route} from "react-router-dom";
 import Services from "./Components/Services/Services.jsx";
 import Career from "./Components/Career/Career.jsx";
 import TermsConditions from "./Components/TermsConditions/Terms&Conditions.jsx";
+import ScrollToTop from "./Components/ScrollToTop.jsx";
+
 
 function App() {
 
   return (
       <>
+          <ScrollToTop />
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/contact" element={<Contact />} />

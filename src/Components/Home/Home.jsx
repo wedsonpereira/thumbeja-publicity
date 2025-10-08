@@ -21,6 +21,7 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/zoom';
 import {useGSAP} from "@gsap/react";
 
+
 gsap.registerPlugin(ScrollTrigger)
 
 const Home = () => {
@@ -51,16 +52,17 @@ const Home = () => {
     useGSAP(() => {
         gsap.from(".home-animation-1",
             {
-                x: -400,
-                duration: 1,
+                x: -100,
                 opacity: 0,
+                duration: 1,
                 stagger: 0.2,
-                ease: "back.in",
+                ease:'power1.Out',
             })
 
         gsap.from(".home-animation-2", {
             scrollTrigger: {
                 trigger: ".home-animation-2",
+                toggleActions:'restart none none reverse',
                 start: 'bottom 90%'
 
 
@@ -70,19 +72,21 @@ const Home = () => {
         gsap.from(".home-animation-3", {
             scrollTrigger: {
                 trigger: ".home-animation-3",
+                toggleActions:'restart none none reverse',
             }, stagger: 0.2, duration: 1, x: -100, opacity: 0
         })
 
         gsap.from(".home-animation-4", {
             scrollTrigger: {
                 trigger: ".home-animation-4",
+                toggleActions:'restart none none reverse',
             }, duration: 1, x: -100, opacity: 0
         })
 
         gsap.from(".home-animation-5", {
             scrollTrigger: {
                 trigger: ".home-animation-5",
-
+                toggleActions:'restart none none reverse',
 
             }, stagger: 0.2, duration: 1, x: -100, opacity: 0
         })
@@ -90,6 +94,8 @@ const Home = () => {
         gsap.from(".home-animation-6", {
             scrollTrigger: {
                 trigger: ".home-animation-6",
+                toggleActions:'restart none none reverse',
+
             }, stagger: 0.2, duration: 1, x: -100, opacity: 0
         })
 
@@ -107,7 +113,7 @@ const Home = () => {
     return (
         <>
             <Header/>
-            <div className={'tp-home w-full bg-[#fefdf7] h-[100lvh] flex gap-7 flex-col'}>
+            <div className={'tp-home w-full bg-[#fefdf7] h-[100lvh] flex gap-7 flex-col overflow-hidden'}>
                 <div className={"tp-box-1 flex items-center justify-center"}>
                     <span
                         className={"tp-home-header-1 text-[5em] text-center font-bold p-2 text-[#091e42] home-animation-1"}>
@@ -191,11 +197,10 @@ const Home = () => {
                                 </button>
                             ))}
                         </div>
-
                         {/* Right Content */}
                         <div
                             className="tp-home-serv-sect2 border-l-1 border-amber-50 w-[70%] h-max flex items-center justify-center home-animation-4">
-                            <div className="text-white w-[80%] h-max flex justify-center flex-col gap-10">
+                            <div className="text-white w-[80%] h-max flex justify-center flex-col gap-10 home-animation-4">
                                 <div
                                     className="w-[80%] flex gap-10 flex-col tp-home-serv-sect2-text0 home-animation-onclick-services">
                                     <span className="text-4xl font-semibold">{homePageData[Index].title}</span>
