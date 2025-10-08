@@ -5,7 +5,7 @@ import Header from "../header/Header.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowUp, faCheck} from "@fortawesome/free-solid-svg-icons";
 import banner from "/src/assets/Images/20943546.jpg";
-import data from "/src/assets/JsonData/data1.jsx"
+// import data from "/src/assets/JsonData/data1.jsx"
 import Footer from "../Footer/Footer.jsx";
 import {homepageData2, homePageData, homepageData3, homepageData4} from "../../assets/JsonData/HomePageData.jsx";
 import featureImg from '/src/assets/Images/features.png'
@@ -80,6 +80,8 @@ const Home = () => {
         gsap.from(".home-animation-4", {
             scrollTrigger: {
                 trigger: ".home-animation-4",
+                start: 'top bottom-=20%',
+                end: 'top center-=50%',
                 toggleActions:'restart none none reverse',
             }, duration: 1, x: -100, opacity: 0
         })
@@ -100,7 +102,7 @@ const Home = () => {
             }, stagger: 0.2, duration: 1, x: -100, opacity: 0
         })
 
-    })
+    },[])
 
     useEffect(() => {
         gsap.from('.home-animation-onclick-services', {
@@ -114,7 +116,7 @@ const Home = () => {
     return (
         <>
             <Header/>
-            <div className={'tp-home w-full bg-[#fefdf7] h-[100lvh] flex gap-7 flex-col overflow-hidden'}>
+            <div className={'tp-home w-full bg-[#fefdf7] flex gap-1 flex-col'}>
                 <div className={"tp-box-1 flex items-center justify-center"}>
                     <span
                         className={"tp-home-header-1 text-[5em] text-center font-bold p-2 text-[#091e42] home-animation-1"}>
@@ -175,8 +177,8 @@ const Home = () => {
                         </div>
                         {/* Right Content */}
                         <div
-                            className="tp-home-serv-sect2 border-l-1 border-amber-50 w-[70%] h-max flex items-center justify-center home-animation-4">
-                            <div className="text-white w-[80%] h-max flex justify-center flex-col gap-10 home-animation-4">
+                            className="tp-home-serv-sect2 border-l-1 border-amber-50 w-[70%] h-max flex items-center justify-center ">
+                            <div className="text-white w-[80%] h-max flex justify-center flex-col gap-10 home-animation-3">
                                 <div
                                     className="w-[80%] flex gap-10 flex-col tp-home-serv-sect2-text0 home-animation-onclick-services">
                                     <span className="text-4xl font-semibold">{homePageData[Index].title}</span>
@@ -197,12 +199,12 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className={"tp-content-features pt-10 pb-10 border-red-900 h-max w-[90%] m-auto flex items-center justify-center text-white select-none"}>
+            <div className={"tp-content-features  h-max w-auto flex items-center justify-center text-white select-none home-animation-4 border-1"}>
                 <div
-                    className={"m-auto w-[85%] h-max bg-[#00001d] rounded-4xl flex items-center justify-evenly tp-home-serv-sect border-1"}>
-                    <div className={"tp-content-features0 w-[50%] h-max flex flex-col gap-1"}>
+                    className={"m-auto w-[77%] h-max bg-[#00001d] rounded-4xl flex items-center justify-evenly tp-home-serv-sect border-1 pt-5 pb-5"}>
+                    <div className={"tp-content-features0 w-[50%] h-max flex flex-col gap-1 "}>
                         <div
-                            className={"tp-content-features0-text h-[10rem] flex justify-center flex-col gap-6 home-animation-4"}>
+                            className={"tp-content-features0-text h-[10rem] flex justify-center flex-col gap-6"}>
                             <span>Features -------</span>
                             <span className={"text-3xl font-semibold home-animation-4"}>
                                     The power of  digital marketing
@@ -227,21 +229,19 @@ const Home = () => {
                     </div>
                     <div className={"tp-content-features1 w-[30%] h-[80%] flex items-end home-animation-4"}>
                         <div className={"tp-home-feature-gradient overflow-hidden home-animation-4"}>
-                            <img src={featureImg} className={"brightness-90 home-animation-4"} width={"100%"}
-                                 height={"100%"}
-                                 alt="yena"/>
+                            <img src={featureImg} className={"brightness-90 home-animation-4"} alt="yena"/>
                         </div>
                     </div>
                 </div>
             </div>
 
             {/*Process container*/}
-            <div className={"tp-content-process h-[85lvh] w-[85%] m-auto mt-[7rem] flex flex-col gap-6 "}>
+            <div className={"tp-content-process min-h-[25rem] w-[85%] m-auto mt-[7rem] flex flex-col gap-6 "}>
                 <div
-                    className={"flex flex-col gap-1 w-full h-[11rem] items-center justify-evenly tp-content-process0 text-center"}>
+                    className={"flex flex-col gap-1 w-full h-[11rem] items-center justify-evenly tp-content-process0 text-center home-animation-5"}>
                     <span>------Process-----</span>
-                    <span className={"text-5xl font-semibold home-animation-5"}>A systematic approach to<span
-                        className={"text-[#5e3bab] home-animation-5"}><br/>digital marketing</span></span>
+                    <span className={"text-5xl font-semibold"}>A systematic approach to<span
+                        className={"text-[#5e3bab]"}><br/>digital marketing</span></span>
                 </div>
                 <div className={"flex text-black h-max w-full tp-content-process1"}>
                     <div className={"flex w-[50%] h-full items-center justify-center tp-content-process1-inner"}>
@@ -296,7 +296,7 @@ const Home = () => {
 
             {/*Who choose us Container*/}
             <div
-                className={"tp-content-whychooseus h-[100lvh] w-[85%] m-auto mt-[7rem] flex flex-col gap-7 select-none"}>
+                className={"tp-content-whychooseus min-h-[25rem] w-[85%] m-auto pt-20 pb-15 flex flex-col gap-7 select-none"}>
                 <div className={"tp-content-whychooseus0 h-[15rem] w-[100%] flex"}>
                     <div className={"flex w-[50%] flex-col gap-5 justify-center home-animation-6"}>
                         <span className={"text-lg"}>Why Choose Us-----</span>
@@ -329,7 +329,7 @@ const Home = () => {
                                                                        trigger={hoverIndex === index}/>}</span>
                                             </div>
                                             <div
-                                                className={`w-[100%] ${hoverIndex === index && " h-[20rem]"} flex items-start justify-center relative overflow-hidden tp-why-image-container`}>
+                                                className={`w-[100%] ${hoverIndex === index && 'h-[20rem]'} h-[0] flex items-start justify-center relative overflow-hidden tp-why-image-container`}>
                                                 <img src={homepageData3[hoverIndex].src}
                                                      className={`w-[95%] h-[95%] object-cover rounded-2xl transition-opacity duration-500 ease-in ${
                                                          fade ? "opacity-100" : "opacity-0"
@@ -344,7 +344,7 @@ const Home = () => {
                     <div
                         className={"tp-content-whychooseus1-right w-[50%] h-[40rem] flex items-start justify-center relative overflow-hidden home-animation-6"}>
                         <img src={homepageData3[hoverIndex].src}
-                             className={`w-[100%] h-[100%] object-cover  rounded-3xl transition-opacity duration-500 ease-in ${
+                             className={`min-w-[100%] h-[100%]  rounded-3xl transition-opacity duration-500 ease-in object-cover ${
                                  fade ? "opacity-100" : "opacity-0"
                              }`} alt=""/>
                     </div>

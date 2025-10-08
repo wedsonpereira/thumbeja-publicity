@@ -30,6 +30,7 @@ const Services = () => {
                 trigger: '.tp-service-animation-3',
                 toggleActions: 'restart none none none',
                 scrub:true,
+                end:'top center-=100px',
             }})
 
     })
