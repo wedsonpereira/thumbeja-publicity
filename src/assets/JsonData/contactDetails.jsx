@@ -4,20 +4,20 @@ const ContactDetails = [
     {
         icon:faEnvelope,
         text:"Email us",
-        contact:"emial@gmail.com",
-        url:"mailto:emial@gmail.com"
+        contact:"thumbeja.publicity@gmail.com",
+        url:"mailto:thumbeja.publicity@gmail.com"
     },
     {
         icon:faPhone,
         text:"Contact us",
-        contact:"15451115151",
-        url:"tel:+911234567890"
+        contact:"+91 6366983700",
+        url:"tel:+916366983700"
     }
     ,
     {
         icon:faLocation,
         text:"Our Address ",
-        contact:"Mangalore near state bank -574144",
+        contact:"4th floor, Sahakari Sadana, Rao & rao Circle, 410, Mission St, Bhavathi, Bunder, Mangaluru, Karnataka 575001",
         url:"https://maps.app.goo.gl/WmjmVMURvhLSWVSx6"
     }
 ]
