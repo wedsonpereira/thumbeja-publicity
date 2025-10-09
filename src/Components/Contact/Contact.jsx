@@ -4,7 +4,7 @@ import "./contact.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import contactdetails from "/src/assets/JsonData/contactDetails.jsx";
 import {faLocationDot, faPhone} from "@fortawesome/free-solid-svg-icons";
-import {faFacebook, faInstagram, faLinkedin, faTwitter, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook, faInstagram, faLinkedin, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import Footer from "../Footer/Footer.jsx";
 import gsap from "gsap";
 import {useGSAP} from "@gsap/react";
@@ -68,7 +68,7 @@ const Contact = () => {
 
     useGSAP(()=>{
 
-        gsap.from('.tp-contact-scroll-animation-1', {y:-50,duration:0.7,opacity:0,ease:"power1.inOut",
+        gsap.from('.tp-contact-scroll-animation-1', {y:-50,duration:1,opacity:0,ease:"power1.inOut",
             scrollTrigger:{
                 trigger: '.tp-contact-scroll-animation-1',
                 toggleActions:'restart none none reverse',
