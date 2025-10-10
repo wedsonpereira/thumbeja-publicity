@@ -159,7 +159,7 @@ const Home = () => {
                     </div>
                 </div>
                 {/*container starting*/}
-                <div className="w-[85%] h-max tp-content-header-3 home-animation-3">
+                <div className="w-[85%] h-max tp-content-header-3 home-animation-3 pt-3 pb-3">
                     <div
                         className="tp-home-serv-sect1 w-full h-max flex items-center justify-center rounded-4xl bg-[#0a071f]">
                         {/* Left Buttons */}
