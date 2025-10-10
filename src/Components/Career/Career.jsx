@@ -26,7 +26,7 @@ const Career = () => {
                 end:'bottom-=400px top',
                 scrub:true,
             }});
-    })
+    },[])
 
     useEffect(() => {
         gsap.from('.tp-career-animation-whileclick',{x:-100,opacity:0,ease:"power1",stagger:0.1});

@@ -3,4 +3,6 @@
 body{
     scroll-behavior: smooth;
     margin: 0;
+    max-width: 2000px;
+    margin-inline: auto;
 }

@@ -4,7 +4,7 @@ import "./contact.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import contactdetails from "/src/assets/JsonData/contactDetails.jsx";
 import {faLocationDot, faPhone} from "@fortawesome/free-solid-svg-icons";
-import {faFacebook, faInstagram, faLinkedin, faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook, faInstagram, faLinkedin, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import Footer from "../Footer/Footer.jsx";
 import gsap from "gsap";
 import {useGSAP} from "@gsap/react";
@@ -68,7 +68,7 @@ const Contact = () => {
 
     useGSAP(()=>{
 
-        gsap.from('.tp-contact-scroll-animation-1', {y:-50,duration:0.7,opacity:0,ease:"power1.inOut",
+        gsap.from('.tp-contact-scroll-animation-1', {y:-50,duration:1,opacity:0,ease:"power1.inOut",
             scrollTrigger:{
                 trigger: '.tp-contact-scroll-animation-1',
                 toggleActions:'restart none none reverse',
@@ -146,16 +146,16 @@ const Contact = () => {
                     </div>
                     <hr className={"opacity-55 w-[100%] mt-8 mb-8 tp-horizontal-line"}/>
                     <div className={"tp-contact-sc-lk flex items-center gap-2 pt-5 tp-contact-scroll-animation-1"}>
-                        <a href={"#"} className={"p-2 tp-contact-sc-hover-effect"}>
+                        <a href={"https://www.facebook.com/share/17UorZadV3/?mibextid=wwXIfr"} className={"p-2 tp-contact-sc-hover-effect"}>
                             <FontAwesomeIcon size={"2xl"} className={"cursor-pointer"} icon={faFacebook}/>
                         </a>
-                        <a href={"#"} className={"p-2 tp-contact-sc-hover-effect"}>
+                        <a href={"https://www.instagram.com/thumbeja_publicity?igsh=NGF3OTc1bTM1czds"} className={"p-2 tp-contact-sc-hover-effect"}>
                               <FontAwesomeIcon size={"2xl"} icon={faInstagram}/>
                         </a>
-                        <a href={"#"} className={"p-2 tp-contact-sc-hover-effect"}>
-                            <FontAwesomeIcon size={"2xl"} icon={faTwitter}/>
+                        <a href={"https://wa.me/916366983700"} className={"p-2 tp-contact-sc-hover-effect"}>
+                            <FontAwesomeIcon size={"2xl"} icon={faWhatsapp}/>
                         </a>
-                        <a href={"#"} className={"p-2 tp-contact-sc-hover-effect"}>
+                        <a href={"https://linkedin.com/in/thumbeja-publicity-267636387"} className={"p-2 tp-contact-sc-hover-effect"}>
                             <FontAwesomeIcon size={"2xl"} icon={faLinkedin}/>
                         </a>
                     </div>
