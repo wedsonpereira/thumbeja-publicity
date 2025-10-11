@@ -41,6 +41,15 @@ const Home = () => {
         console.log(index);
     }
 
+    useEffect(() => {
+
+        gsap.from('.tp-whychooseus-animation',{x:-50,opacity:0});
+        gsap.from('.tp-whychooseus-animation-img',{x:0,scale:0,ease:'bounce.out'});
+
+    },[hoverIndex]);
+
+
+
     const [fade, setFade] = useState(true);
 
     useEffect(() => {
@@ -74,7 +83,7 @@ const Home = () => {
             scrollTrigger: {
                 trigger: ".home-animation-3",
                 toggleActions:'restart none none reverse',
-            }, stagger: 0.2, duration: 1, x: -100, opacity: 0
+            },stagger:0.2, duration: 0.7, x: -100, opacity: 0
         })
 
         gsap.from(".home-animation-4", {
@@ -168,7 +177,7 @@ const Home = () => {
                             {homePageData.map((item, index) => (
                                 <button
                                     key={item.id}
-                                    className="text-white hover:text-white hover:bg-orange-500 border rounded-4xl w-[80%] h-[4rem]"
+                                    className="text-white hover:text-white hover:bg-orange-500 border rounded-4xl w-[80%] h-[4rem] p-1"
                                     onClick={() => handleInputChange(index)}>
                                     {item.title}
                                 </button>
@@ -179,7 +188,7 @@ const Home = () => {
                             className="tp-home-serv-sect2 border-l-1 border-amber-50 w-[70%] h-max flex items-center justify-center ">
                             <div className="text-white w-[80%] h-max flex justify-center flex-col gap-10 home-animation-3">
                                 <div
-                                    className="w-[80%] flex gap-10 flex-col tp-home-serv-sect2-text0 home-animation-onclick-services">
+                                    className="w-[100%] flex gap-10 flex-col tp-home-serv-sect2-text0 home-animation-onclick-services">
                                     <span className="text-4xl font-semibold">{homePageData[Index].title}</span>
                                     <p>{homePageData[Index].subtitle}</p>
                                 </div>
@@ -317,17 +326,17 @@ const Home = () => {
                                                 <span
                                                     className={"h-[100%] w-[10%] bg-[white] text-red-800 flex items-center justify-start text-4xl"}>0{item.id}</span>
                                                 <span
-                                                    className={"h-[100%] w-[80%] bg-[white] text-black flex items-center justify-start text-4xl"}
+                                                    className={"h-[100%] w-[80%] bg-[white] text-black flex items-center justify-start text-4xl "}
                                                     onClick={() => handleMouseEnter(index)}>{item.title}</span>
                                             </div>
                                             <div className={"flex justify-start w-full"}>
-                                                <span className={"pt-1 pb-1 ml-17 text-lg"}>{hoverIndex === index && homepageData3[index].description}</span>
+                                                <span className={"pt-1 pb-1 ml-17 text-lg tp-whychooseus-animation"}>{hoverIndex === index && homepageData3[index].description}</span>
                                             </div>
                                             <div
                                                 className={`w-[100%] ${hoverIndex === index && 'h-[20rem]'} h-[0] flex items-start justify-center relative overflow-hidden tp-why-image-container`}>
                                                 <img src={homepageData3[hoverIndex].src}
                                                      className={`w-[95%] h-[95%] object-cover rounded-2xl transition-opacity duration-500 ease-in ${
-                                                         fade ? "opacity-100" : "opacity-0"
+                                                         fade ? "opacity-100 tp-whychooseus-animation" : "opacity-0"
                                                      }`} alt=""/>
                                             </div>
                                         </div>
@@ -340,7 +349,7 @@ const Home = () => {
                         className={"tp-content-whychooseus1-right w-[50%] h-[40rem] flex items-start justify-center relative overflow-hidden home-animation-6"}>
                         <img src={homepageData3[hoverIndex].src}
                              className={`min-w-[100%] h-[100%]  rounded-3xl transition-opacity duration-500 ease-in object-cover ${
-                                 fade ? "opacity-100" : "opacity-0"
+                                 fade ? "opacity-100 tp-whychooseus-animation-img" : "opacity-0"
                              }`} alt=""/>
                     </div>
                 </div>
