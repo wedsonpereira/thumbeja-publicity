@@ -169,8 +169,7 @@ const Home = () => {
                                 <button
                                     key={item.id}
                                     className="text-white hover:text-white hover:bg-orange-500 border rounded-4xl w-[80%] h-[4rem]"
-                                    onClick={() => handleInputChange(index)}
-                                >
+                                    onClick={() => handleInputChange(index)}>
                                     {item.title}
                                 </button>
                             ))}
@@ -219,9 +218,7 @@ const Home = () => {
                                         <span className={"text-2xl"}>
                                             {item.title}
                                         </span>
-                                        <p>
-                                            {item.description}
-                                        </p>
+                                        <p>{item.description}</p>
                                     </div>
                                 )
                             })}
@@ -324,9 +321,7 @@ const Home = () => {
                                                     onClick={() => handleMouseEnter(index)}>{item.title}</span>
                                             </div>
                                             <div className={"flex justify-start w-full"}>
-                                                <span className={"pt-1 pb-1 ml-20 text-lg"}>{hoverIndex === index &&
-                                                    <TypingDescription text={homepageData3[hoverIndex].description}
-                                                                       trigger={hoverIndex === index}/>}</span>
+                                                <span className={"pt-1 pb-1 ml-17 text-lg"}>{hoverIndex === index && homepageData3[index].description}</span>
                                             </div>
                                             <div
                                                 className={`w-[100%] ${hoverIndex === index && 'h-[20rem]'} h-[0] flex items-start justify-center relative overflow-hidden tp-why-image-container`}>
@@ -353,31 +348,6 @@ const Home = () => {
             <Footer/>
         </>
     );
-};
-
-
-const TypingDescription = ({text, trigger}) => {
-    const [displayed, setDisplayed] = useState("");
-
-    useEffect(() => {
-
-        if (!trigger) {
-            setDisplayed("");
-            return;
-        }
-
-        let i = 0;
-        setDisplayed(""); // reset on re-trigger
-        const interval = setInterval(() => {
-            setDisplayed((prev) => prev + text.charAt(i));
-            i++;
-            if (i >= text.length) clearInterval(interval);
-        }, 20); // typing speed in ms
-
-        return () => clearInterval(interval);
-    }, [text, trigger]);
-
-    return <span>{displayed}</span>;
 };
 
 

@@ -114,8 +114,8 @@ const jobData =[
         ]
     },
     {
-        title: "Digital Engagement Specialist",
-        url:"https://software.developer.org",
+        title: "Digital Marketing",
+        url:"https://docs.google.com/forms/d/e/1FAIpQLSdgPMH_uNjhtUOgHg3faNpgn8BRDH-nhTNDPAP8-SR27X4SXA/viewform?usp=header",
         sections: [
             {
                 heading: "Key Responsibilities",
@@ -123,43 +123,41 @@ const jobData =[
                     {
                         subHeading: "1. Digital Campaign Management",
                         points: [
-                            "Plan, execute, and optimize digital marketing campaigns across multiple platforms.",
-                            "Analyze campaign performance and generate actionable insights."
+                            "Plan and execute campaigns on Google Ads, Meta Ads, YouTube Ads, and other relevant platforms.",
+                            "Create engaging social media content, reels, and posts to grow brand visibility.",
+                            "Monitor campaign performance and optimize for ROI, engagement, and conversions."
                         ]
                     },
                     {
-                        subHeading: "2. Content Strategy & Creation",
+                        subHeading: "2. SEO & Website Management",
                         points: [
-                            "Develop engaging content for social media, email, and web channels.",
-                            "Collaborate with designers and copywriters to maintain brand consistency."
+                            "Implement on-page and off-page SEO strategies.",
+                            "Monitor website traffic and performance using analytics tools.",
+                            "Suggest improvements for website content, UX, and design to increase reach."
                         ]
                     },
                     {
-                        subHeading: "3. Social Media & Community Engagement",
+                        subHeading: "3. Content Strategy & Creation",
                         points: [
-                            "Manage social media accounts and online communities.",
-                            "Respond to audience inquiries and engage with followers to boost brand loyalty."
+                            "Collaborate with Graphic Designers to create visually appealing content.",
+                            "Plan a content calendar aligned with marketing goals.",
+                            "Ensure all digital content is brand-consistent and error-free."
                         ]
                     },
                     {
                         subHeading: "4. Analytics & Reporting",
                         points: [
-                            "Monitor KPIs and generate weekly/monthly performance reports.",
-                            "Use analytics tools to track ROI and campaign effectiveness."
+                            "Track KPIs such as CTR, CPC, conversions, impressions, and engagement rate.",
+                            "Submit weekly and monthly reports to the Marketing Head.",
+                            "Provide actionable recommendations to improve campaign performance."
                         ]
                     },
                     {
                         subHeading: "5. Collaboration & Coordination",
                         points: [
-                            "Work closely with sales, marketing, and design teams for integrated campaigns.",
-                            "Coordinate with external vendors and partners for marketing initiatives."
-                        ]
-                    },
-                    {
-                        subHeading: "6. Digital Tools & Automation",
-                        points: [
-                            "Implement marketing automation tools and CRM integrations.",
-                            "Optimize workflows to improve efficiency and lead generation."
+                            "Work closely with Marketing Head, Sales Executives, and Graphic Designers.",
+                            "Ensure campaigns are aligned with client expectations and company objectives.",
+                            "Participate in brainstorming sessions for new campaigns and strategies."
                         ]
                     }
                 ]
@@ -167,22 +165,19 @@ const jobData =[
             {
                 heading: "Required Skills",
                 points: [
-                    "Strong understanding of digital marketing channels and trends.",
-                    "Proficiency in social media management tools (Hootsuite, Buffer, etc.).",
-                    "Experience with Google Analytics, Facebook Ads Manager, and SEO tools.",
-                    "Ability to create engaging content and visuals in collaboration with design teams.",
-                    "Knowledge of email marketing platforms (Mailchimp, HubSpot, etc.).",
-                    "Strong analytical skills for data-driven decision making.",
-                    "Excellent communication and project management abilities.",
-                    "Familiarity with CRM systems and marketing automation platforms."
+                    "Strong knowledge of Google Ads, Meta Ads, SEO, SEM, YouTube Ads, and analytics tools.",
+                    "Experience in creating reels, posts, and social media campaigns.",
+                    "Analytical skills to measure campaign performance and ROI.",
+                    "Excellent communication and teamwork skills.",
+                    "Ability to multitask and meet deadlines."
                 ]
             },
             {
                 heading: "Qualifications",
                 points: [
-                    "Bachelor’s degree in Marketing, Communications, or related field.",
-                    "2–4 years of experience in digital marketing or online engagement roles.",
-                    "Prior experience in campaign management, social media strategy, or content creation preferred."
+                    "Bachelor’s degree in Marketing, Digital Media, or related field.",
+                    "Minimum 2–4 years of experience in digital marketing.",
+                    "Proven experience in managing multi-channel campaigns for businesses."
                 ]
             }
         ]
@@ -190,51 +185,59 @@ const jobData =[
 
     {
         title: "Business Development Manager",
-        url:"https://software.developer.org",
+        url:"https://docs.google.com/forms/d/e/1FAIpQLSc6YjZq4I_ScisExO6lQKb8UK4l-5Qcckkji3J4z0gEtQ7OkA/viewform?usp=header",
         sections: [
             {
                 heading: "Key Responsibilities",
                 items: [
                     {
-                        subHeading: "1. Client Acquisition",
+                        subHeading: "1. Lead Generation and Client Acquisition",
                         points: [
-                            "Identify and approach potential clients through networking, cold calls, and meetings.",
-                            "Develop strategies to expand the company’s client base and market presence."
+                            "Identify and approach potential clients through calls, visits, and online/offline platforms.",
+                            "Pitch company services including software, printing, graphics, video editing, and digital marketing.",
+                            "Generate leads, follow up, and convert them into long-term clients.",
+                            "Meet monthly and quarterly sales targets."
                         ]
                     },
                     {
-                        subHeading: "2. Relationship Management",
+                        subHeading: "2. Client Relationship Management",
                         points: [
-                            "Build and maintain strong, long-lasting client relationships.",
-                            "Act as the primary point of contact for key accounts."
+                            "Maintain strong relationships with existing clients.",
+                            "Provide after-sales support and ensure client satisfaction.",
+                            "Upsell and cross-sell additional services to clients."
                         ]
                     },
                     {
-                        subHeading: "3. Sales Strategy & Execution",
+                        subHeading: "3. Marketing & Campaign Execution",
                         points: [
-                            "Develop and execute sales strategies to achieve business growth targets.",
-                            "Negotiate contracts, proposals, and agreements with clients."
+                            "Support marketing campaigns including digital ads, social media promotions, and print/outdoor activities.",
+                            "Coordinate with designers and digital marketers for creatives and campaigns.",
+                            "Assist in promotional events, exhibitions, and collaborations."
                         ]
                     },
                     {
                         subHeading: "4. Market Research & Analysis",
                         points: [
-                            "Research market trends, competitors, and industry developments.",
-                            "Identify new opportunities and innovative approaches for growth."
+                            "Keep track of market trends, competitor activities, and new opportunities.",
+                            "Suggest ideas to improve sales and marketing effectiveness."
                         ]
                     },
                     {
-                        subHeading: "5. Team Collaboration",
+                        subHeading: "5. Reporting",
                         points: [
-                            "Work closely with marketing, product, and operations teams to align strategies.",
-                            "Provide feedback from clients to improve products and services."
+                            "Maintain daily/weekly client interaction reports.",
+                            "Share lead status, sales updates, and marketing feedback with management."
                         ]
                     },
                     {
-                        subHeading: "6. Reporting & Forecasting",
+                        subHeading: "6. Key Skills Required",
                         points: [
-                            "Prepare regular sales reports and revenue forecasts for management.",
-                            "Track KPIs and evaluate performance against targets."
+                            "Strong communication and interpersonal skills.",
+                            "Basic knowledge of sales & marketing (digital + offline).",
+                            "Confidence in client interactions and presentations.",
+                            "Ability to achieve targets and work under deadlines.",
+                            "Knowledge of social media, digital marketing, or printing solutions is an advantage.",
+                            "Self-motivated, energetic, and eager to learn."
                         ]
                     }
                 ]
@@ -264,130 +267,152 @@ const jobData =[
 
     {
         title: "Client Relationship Associate",
-        url:"https://software.developer.org",
+        url:"https://docs.google.com/forms/d/e/1FAIpQLSdleYVuRMVs5u7IdLogQblzutJUeCghtuQmn3AU6cujyU4epA/viewform?usp=header",
         sections: [
             {
                 heading: "Key Responsibilities",
                 items: [
                     {
-                        subHeading: "1. Client Onboarding",
+                        subHeading: "1. Tele Caller Duties",
                         points: [
-                            "Assist new clients with onboarding processes and documentation.",
-                            "Ensure smooth transition and understanding of company services."
+                            "Make outbound calls to prospective and existing customers to promote telecom products and services.",
+                            "Answer inbound calls, respond to customer queries, and resolve issues efficiently.",
+                            "Maintain accurate records of customer interactions, feedback, and transactions in CRM systems.",
+                            "Follow communication scripts and guidelines to ensure consistent service quality.",
+                            "Meet daily/weekly/monthly targets for call volume, lead generation, and conversions.",
+                            "Follow communication scripts and guidelines to ensure consistent service quality.",
+                            "Meet daily/weekly/monthly targets for call volume, lead generation, and conversions.",
+                            "Provide information on pricing, plans, and promotions to customers.",
+                            "Escalate complex issues to supervisors or technical teams when necessary.",
+                            "Build and maintain positive relationships with customers to ensure satisfaction and loyalty.",
+                            "Conduct demonstrations and assist in converting prospects into paying customers."
                         ]
                     },
                     {
-                        subHeading: "2. Relationship Management",
+                        subHeading: "2. Client Engagement and Sales Support",
                         points: [
-                            "Maintain regular communication with clients to understand their needs.",
-                            "Build strong, long-term relationships that encourage trust and loyalty."
+                            "Make outbound calls to potential clients and respond to inbound inquiries.",
+                            "Explain product features, benefits, and use cases in a clear and engaging manner.",
+                            "Schedule and conduct online/onsite demonstrations of software to interested clients.",
+                            "Understand client needs and suggest appropriate software solutions.",
+                            "Follow up with prospects after demos to address queries and move them through the sales pipeline.",
+                            "Maintain accurate records of client interactions, follow-ups, and conversions in CRM.",
+                            "Meet or exceed weekly and monthly targets for calls, demos, and sales closures.",
+                            "Work closely with the sales team to improve conversion strategies."
                         ]
                     },
                     {
-                        subHeading: "3. Customer Support",
+                        subHeading: "3. Administrative Support",
                         points: [
-                            "Address client inquiries and resolve issues in a timely manner.",
-                            "Coordinate with internal teams to ensure client satisfaction."
+                            "Handle incoming calls, emails, and correspondence in a professional manner.",
+                            "Maintain and organize office files, records, and documentation.",
+                            "Assist in preparing reports, presentations, and other documents.",
+                            "Perform data entry, record-keeping, and database updates.",
+                            "Support HR, finance, and other departments with clerical tasks.",
+                            "Greet and assist visitors, clients, and staff."
                         ]
                     },
-                    {
-                        subHeading: "4. Feedback & Improvement",
-                        points: [
-                            "Collect feedback from clients and report insights to management.",
-                            "Work with teams to implement service improvements based on client feedback."
-                        ]
-                    },
-                    {
-                        subHeading: "5. Reporting",
-                        points: [
-                            "Prepare and maintain client interaction reports.",
-                            "Monitor client accounts and provide updates to senior management."
-                        ]
-                    }
+
                 ]
             },
             {
                 heading: "Required Skills",
                 points: [
-                    "Excellent communication and interpersonal skills.",
-                    "Strong problem-solving and conflict resolution abilities.",
-                    "Customer-oriented with a service mindset.",
-                    "Ability to multitask and manage client accounts effectively.",
-                    "Good organizational and time-management skills.",
-                    "Proficiency in MS Office and CRM tools."
+                    "Excellent verbal and written communication skills.",
+                    "Strong interpersonal abilities for building client relationships.",
+                    "Proficiency in CRM systems and basic telephony tools.",
+                    "Problem-solving skills for handling customer queries and escalations.",
+                    "Ability to multitask in a fast-paced environment.",
+                    "Basic knowledge of sales techniques and customer service best practices.",
+                    "Organizational skills for record-keeping and reporting.",
+                    "Self-motivated with a target-oriented mindset."
                 ]
             },
             {
                 heading: "Qualifications",
                 points: [
-                    "Bachelor’s degree in Business Administration, Marketing, or a related field.",
-                    "1–3 years of experience in client service, sales support, or customer relations.",
-                    "Experience in handling client accounts is preferred."
+                    "Bachelor’s degree in Business, Communications, or a related field.",
+                    "1–2 years of experience in telecalling, customer service, or sales support.",
+                    "Prior experience in telecom or software sales is a plus.",
+                    "Familiarity with MS Office and digital communication tools."
                 ]
             }
         ]
     },
     {
-        title: "Machine Operator",
-        url:"https://software.developer.org",
+        title: "Graphic Designer",
+        url:"https://docs.google.com/forms/d/e/1FAIpQLSchg7HT3p1MnPYUZBZDbZmZao56AXIAA8NvxXjXQxgIvkjqNA/viewform?usp=header",
         sections: [
             {
                 heading: "Key Responsibilities",
                 items: [
                     {
-                        subHeading: "1. Machine Setup & Operation",
+                        subHeading: "1. Digital Marketing Designs",
                         points: [
-                            "Set up machines according to production requirements.",
-                            "Operate machinery safely and efficiently during production runs."
+                            "Design and produce creative materials for digital marketing (social media posts, ads, reels thumbnails, YouTube banners, website graphics, etc.).",
+                            "Ensure design consistency with company branding and campaign objectives."
                         ]
                     },
                     {
-                        subHeading: "2. Quality Control",
+                        subHeading: "2. Print-Ready Materials",
                         points: [
-                            "Monitor machines to ensure products meet quality standards.",
-                            "Inspect finished products and report defects to supervisors."
+                            "Create print-ready designs for banners, brochures, visiting cards, t-shirts, packaging, invitations, and other marketing materials.",
+                            "Prepare final artwork for printing and publishing."
                         ]
                     },
                     {
-                        subHeading: "3. Maintenance & Troubleshooting",
+                        subHeading: "3. Collaboration and Delivery",
                         points: [
-                            "Perform routine maintenance on machines to ensure optimal performance.",
-                            "Identify and troubleshoot minor mechanical or technical issues."
+                            "Work with sales and marketing teams to develop promotional campaigns.",
+                            "Deliver concepts within deadlines while maintaining high design quality."
                         ]
                     },
                     {
-                        subHeading: "4. Safety & Compliance",
+                        subHeading: "4. File Management and Trends",
                         points: [
-                            "Follow workplace safety guidelines and wear protective equipment.",
-                            "Ensure machines are operated in compliance with company policies."
+                            "Maintain an organized archive of design files and ensure version control.",
+                            "Stay updated on design tools, software, and creative trends."
                         ]
                     },
                     {
-                        subHeading: "5. Documentation & Reporting",
+                        subHeading: "5. Standard Operating Procedure (SOP)",
                         points: [
-                            "Record production data, machine output, and downtime logs.",
-                            "Report equipment malfunctions or hazards to maintenance teams."
+                            "Receive creative brief from Marketing Head/Manager.",
+                            "Develop initial concepts and share drafts for approval.",
+                            "Revise designs based on feedback.",
+                            "Submit final artwork in required formats (JPEG, PNG, PDF, AI/CDR, print-ready files).",
+                            "Maintain backup of all final designs in company’s server/cloud."
                         ]
                     }
                 ]
             },
             {
+                heading: "Key Performance Indicators (KPI)",
+                points: [
+                    "Timely delivery of designs as per project deadlines.",
+                    "Quality rating/feedback from internal teams and clients.",
+                    "Engagement rate and performance of designed social media posts.",
+                    "Accuracy and print quality of physical materials.",
+                    "Number of creative assets produced per week/month."
+                ]
+            },
+            {
                 heading: "Required Skills",
                 points: [
-                    "Basic mechanical knowledge and technical aptitude.",
-                    "Attention to detail with strong focus on quality.",
-                    "Ability to follow instructions and standard operating procedures.",
-                    "Good physical stamina to operate machines for long shifts.",
-                    "Problem-solving and troubleshooting skills.",
-                    "Teamwork and communication skills."
+                    "Proven experience as a Graphic Designer (portfolio required).",
+                    "Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign, CorelDraw, etc.).",
+                    "Knowledge of digital ad formats and print specifications.",
+                    "Strong sense of typography, color, and layout.",
+                    "Ability to adapt designs for multiple platforms (web, social media, print).",
+                    "Attention to detail, creativity, and ability to meet deadlines.",
+                    "Good communication skills and ability to work in a team."
                 ]
             },
             {
                 heading: "Qualifications",
                 points: [
-                    "High school diploma or equivalent required.",
-                    "Certification or vocational training in machine operation preferred.",
-                    "1–2 years of experience in a manufacturing or production environment is an advantage."
+                    "Bachelor’s degree/Diploma in Graphic Design, Visual Arts, or related field.",
+                    "1–3 years (freshers with strong portfolios can also be considered)."
                 ]
             }
         ]

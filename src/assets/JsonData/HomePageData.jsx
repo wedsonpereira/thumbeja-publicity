@@ -10,74 +10,91 @@ import {faDiceOne,faDiceTwo,faDiceThree} from "@fortawesome/free-solid-svg-icons
 const homePageData=[
     {
         id: 1,
-        title: "Web Design & Development",
-        subtitle: "Strategically share valuable, relevant content to attract, inform, and convert target audiences, brand credibility, and growth.",
+        title: "Website & Software Development(SEO)",
+        subtitle: "We help your business appear at the top of search results using targeted Google Ads and SEO strategies. Our goal is to increase visibility, drive quality traffic, and boost conversions.",
         services:[
-            "Social media content strategy",
-            "Content distribution and outreach",
-            "Blog post creation and optimization",
-            "SEO-focused content development",
+            "Targeted Google Ads campaigns",
+            "SEO strategies for top search rankings",
+            "Visibility enhancement",
+            "Quality traffic generation",
+            "Conversion optimization",
         ]
     },
 
     {
         id: 2,
-        title: "Content marketing",
-        subtitle: "Strategically share valuable, relevant content to attract, inform, and convert target audiences, brand credibility, and growth.",
+        title: "Digital Marketing",
+        subtitle: "Expand your reach through powerful social media campaigns tailored to your audience. We create engaging content and run ads that attract followers, build brand trust, and generate leads.",
         services:[
-            "Social media content strategy",
-            "Content distribution and outreach",
-            "Blog post creation and optimization",
-            "SEO-focused content development",
+            "Engaging content creation",
+            "Targeted ad campaigns on Facebook, Instagram, LinkedIn, Pinterest, and Meta",
+            "Follower attraction",
+            "Brand trust building",
+            "Lead generation",
         ]
     },
 
+
+
     {
         id: 3,
-        title: "Digital marketing",
-        subtitle: "Strategically share valuable, relevant content to attract, inform, and convert target audiences, brand credibility, and growth.",
+        title: "Social Media Marketing",
+        subtitle: "Stay connected with your customers through smart automation. We set up WhatsApp Business APIs, bulk SMS, and email campaigns to engage audiences instantly and build strong customer relationships.",
         services:[
-            "Social media content strategy",
-            "Content distribution and outreach",
-            "Blog post creation and optimization",
-            "SEO-focused content development",
+            "WhatsApp Business API setup",
+            "Bulk SMS campaigns",
+            "Email marketing automation",
+            "Chatbot Marketing",
+            "Customer relationship building",
         ]
     },
 
     {
         id: 4,
-        title: "Search Engine Optimization",
-        subtitle: "Strategically share valuable, relevant content to attract, inform, and convert target audiences, brand credibility, and growth.",
+        title: "Customer Relationship Management",
+        subtitle: "Track and manage every customer interaction with ease. Our CRM solutions provide deep insights, help you understand customer behavior, and measure the performance of your marketing campaigns.",
         services:[
-            "Social media content strategy",
-            "Content distribution and outreach",
-            "Blog post creation and optimization",
-            "SEO-focused content development",
+            "Customer interaction tracking",
+            "Deep insights provision",
+            "Customer behavior analysis",
+            "Marketing campaign performance measurement",
         ]
     },
 
+    {
+        id: 5,
+        title: "Printing & Branding Solutions",
+        subtitle: "Premium printing and branding solutions ensuring your business makes a lasting impression both online and offline.",
+        services:[
+            "Corporate Stationery: visiting cards, letterheads, envelopes, billbooks",
+            "Marketing Collaterals: pamphlets, brochures, posters, catalogues, company profiles, danglers, sticker sheet labels",
+            "Event & Personal Branding: invitation cards, ID cards, badges, button badges",
+            "Merchandise Printing: custom mugs, t-shirts, mementos",
+            "Signage & Display: durable name plates, signage boards",
+        ]
+    },
 ]
 
 const homepageData2 = [
     {
         id: 1,
         title: "Web Design & Development",
-        description:"Description of Web Design & Development",
+        description:"Custom responsive websites and apps.",
     },
     {
         id: 2,
         title: "Digital marketing",
-        description:"Description of Web Design & Development",
+        description:"Targeted campaigns to boost engagement.",
     },
     {
         id: 3,
         title: "Search Engine Optimization",
-        description:"Description of Web Design & Development",
+        description:"Improve visibility and drive traffic.",
     },
     {
         id: 4,
         title: "Graphic and Poster design",
-        description:"Description of Web Design & Development",
+        description:"Creative visuals for brand impact.",
     },
 
 
@@ -88,31 +105,31 @@ const homepageData3 = [
     {
         id: 1,
         title: "Expertise teams",
-        description:"This is the first index",
+        description:" Our seasoned professionals bring deep industry knowledge and innovative strategies to every project.",
         src:Business1
     },
     {
         id: 2,
         title: "Tailored Solutions",
-        description:"This is the second index",
+        description:" We craft customized strategies that align perfectly with your unique business goals and challenges.",
         src:Business2
     },
     {
         id: 3,
         title: "Client Centric Approach",
-        description:"This is the third index",
+        description:" Your success is our priority, with open communication and collaborative partnerships at the core.",
         src:Business3
     },
     {
         id: 4,
         title: "24/7 Customer Support",
-        description:"this is the fourth index",
+        description:" Round-the-clock assistance ensures your concerns are addressed promptly, whenever they arise.",
         src:Business4
     },
     {
         id: 5,
         title: "High Returns on investment",
-        description:"this is the fifth index",
+        description:" Proven results deliver measurable ROI through efficient, data-driven marketing initiatives.",
         src:Business5
     },
 ]
@@ -121,22 +138,20 @@ const homepageData4 = [
     {
         id: 1,
         icon:faDiceOne,
-        title: "Come up with a blueprint",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo minus nihil sed. Alias, at beatae consequatur culpa facere hic iure libero magnam quae quaerat, qui quo suscipit voluptatem, voluptates.",
+        title: "Defining Objectives and Audience",
+        description:" We start by setting clear, measurable goals for your digital marketing efforts, such as increasing brand awareness or driving conversions. We conduct thorough audience research to understand demographics, behaviors, and preferences, ensuring your strategy targets the right people effectively.",
     },
     {
         id: 2,
         icon:faDiceTwo,
-        title: "Come up with a blueprint",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo minus nihil sed. Alias, at beatae consequatur culpa facere hic iure libero magnam quae quaerat, qui quo suscipit voluptatem, voluptates.",
+        title: "Developing Content and Campaigns",
+        description:" We create compelling, value-driven content tailored to your audience across chosen channels like social media, email, and SEO. We launch integrated campaigns that leverage automation tools and analytics to maximize reach and engagement while maintaining brand consistency.",
     },
     {
         id: 3,
         icon:faDiceThree,
-        title: "Come up with a blueprint",
-        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus explicabo minus nihil sed. Alias, at beatae consequatur culpa facere hic iure libero magnam quae quaerat, qui quo suscipit voluptatem, voluptates.",
+        title: "Analyzing and Optimizing Performance",
+        description:"We track key metrics using tools like Google Analytics to evaluate campaign success against your objectives. We identify what's working and what isn't, then iterate by refining strategies, reallocating budgets, and testing new approaches for continuous improvement.",
     },
-
 ]
-
 export {homePageData,homepageData2,homepageData3,homepageData4};
