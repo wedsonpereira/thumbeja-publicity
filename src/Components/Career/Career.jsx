@@ -16,21 +16,26 @@ const Career = () => {
         setindex(id);
     }
 
-    useGSAP(()=>{
-        gsap.from('.tp-career-animation-1',{x:-100,opacity:0,ease:"Power2.easeOut",stagger:0.2 });
 
-        gsap.from('.tp-career-animation-2',{y:+70,opacity:0,ease:"Power2.easeOut",stagger:0.2,delay:0.2,
-            scrollTrigger:{
-             trigger: '.tp-career-animation-2',
-                start:'top-=600px center',
-                end:'bottom-=400px top',
-                scrub:true,
-            }});
+    useGSAP(()=>{
+            gsap.from('.tp-career-animation-1', {x: -100, opacity: 0, ease: "Power2.easeOut", stagger: 0.2});
+
+            // gsap.from('.tp-career-animation-2', {
+            //     y: +70, opacity: 0, ease: "Power2.easeOut", stagger: 0.2, delay: 0.2,
+            //     scrollTrigger: {
+            //         trigger: '.tp-career-animation-2',
+            //         start: 'top-=600px center',
+            //         end: 'bottom-=400px top',
+            //         scrub: true,
+            //     }
+            // });
     },[])
 
     useEffect(() => {
-        gsap.from('.tp-career-animation-whileclick',{x:-100,opacity:0,ease:"power1",stagger:0.1});
-
+        let ctx=gsap.context(()=>{
+            gsap.from('.tp-career-animation-whileclick', {x: -100, opacity: 0, ease: "power1", stagger: 0.1});
+        })
+        return ()=> ctx.revert()
     },[hoverindex])
 
     return (

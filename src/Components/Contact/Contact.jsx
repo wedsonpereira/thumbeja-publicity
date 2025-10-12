@@ -67,24 +67,25 @@ const Contact = () => {
 
 
     useGSAP(()=>{
+            gsap.from('.tp-contact-scroll-animation-1', {
+                y: -50, duration: 1, opacity: 0, ease: "power1.inOut",
+                scrollTrigger: {
+                    trigger: '.tp-contact-scroll-animation-1',
+                    toggleActions: 'restart none none reverse',
+                    start: 'top+=300px bottom-=100px',
+                    end: 'top-=200px top',
+                }
+            })
 
-        gsap.from('.tp-contact-scroll-animation-1', {y:-50,duration:1,opacity:0,ease:"power1.inOut",
-            scrollTrigger:{
-                trigger: '.tp-contact-scroll-animation-1',
-                toggleActions:'restart none none reverse',
-                start:'top+=300px bottom-=100px',
-                end:'top-=200px top',
-            }})
-
-         gsap.from('.tp-contact-scroll-animation-2', {x:-100,stagger:0.2,duration:1,opacity:0,ease:'power1.in',
-            scrollTrigger:{
-                trigger: '.tp-contact-scroll-animation-2',
-                start:'top center+=300px',
-                end:'top-=300px top',
-                toggleActions:'restart none none reverse',
-            }})
-
-
+            gsap.from('.tp-contact-scroll-animation-2', {
+                x: -100, stagger: 0.2, duration: 1, opacity: 0, ease: 'power1.in',
+                scrollTrigger: {
+                    trigger: '.tp-contact-scroll-animation-2',
+                    start: 'top center+=300px',
+                    end: 'top-=300px top',
+                    toggleActions: 'restart none none reverse',
+                }
+            })
 
     },[])
 
@@ -143,7 +144,7 @@ const Contact = () => {
                             <span className={"hover:text-blue-300 transition-shadow"}>+91 6366983700</span>
                         </div>
                     </div>
-                    <hr className={"opacity-55 w-[100%] mt-8 mb-8 tp-horizontal-line"}/>
+                    <hr className={"opacity-55 w-[100%] mt-8 mb-8 tp-horizontal-line  tp-contact-scroll-animation-1"}/>
                     <div className={"tp-contact-sc-lk flex items-center gap-2 pt-5 tp-contact-scroll-animation-1"}>
                         <a href={"https://www.facebook.com/share/17UorZadV3/?mibextid=wwXIfr"} className={"p-2 tp-contact-sc-hover-effect"}>
                             <FontAwesomeIcon size={"2xl"} className={"cursor-pointer"} icon={faFacebook}/>

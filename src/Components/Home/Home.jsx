@@ -42,21 +42,13 @@ const Home = () => {
     }
 
     useEffect(() => {
+        let ctx=gsap.context(()=>{
+            gsap.from('.tp-whychooseus-animation',{x:-50,opacity:0});
+            gsap.from('.tp-whychooseus-animation-img',{x:0,scale:0,ease:'bounce.out'});
+        })
 
-        gsap.from('.tp-whychooseus-animation',{x:-50,opacity:0});
-        gsap.from('.tp-whychooseus-animation-img',{x:0,scale:0,ease:'bounce.out'});
-
+        return () => ctx.revert()
     },[hoverIndex]);
-
-
-
-    const [fade, setFade] = useState(true);
-
-    useEffect(() => {
-        setFade(false); // start fade-out
-        const timeout = setTimeout(() => setFade(true), 200); // fade-in new image
-        return () => clearTimeout(timeout);
-    }, [hoverIndex]);
 
 
     useGSAP(() => {
@@ -114,14 +106,16 @@ const Home = () => {
     },[])
 
     useEffect(() => {
-        gsap.from('.home-animation-onclick-services', {
-            x: -100, stagger: 0.3, opacity: 0,
-            scrollTrigger: {
-                trigger: '.home-animation-onclick-services',
-            }
-        })
-
+        let ctx=gsap.context(()=>{
+            gsap.from('.home-animation-onclick-services', {
+                x: -100, stagger: 0.3, opacity: 0,
+                scrollTrigger: {
+                    trigger: '.home-animation-onclick-services',
+                }
+            })
+        });return () => ctx.revert()
     }, [Index])
+
     return (
         <>
             <Header/>
@@ -302,7 +296,7 @@ const Home = () => {
 
             {/*Who choose us Container*/}
             <div
-                className={"tp-content-whychooseus min-h-[25rem] w-[85%] m-auto pt-20 pb-15 flex flex-col gap-7 select-none"}>
+                className={"tp-content-whychooseus min-h-[30rem] w-[85%] m-auto pt-20 pb-15 flex flex-col gap-7 select-none"}>
                 <div className={"tp-content-whychooseus0 h-[15rem] w-[100%] flex"}>
                     <div className={"flex w-[50%] flex-col gap-5 justify-center home-animation-6"}>
                         <span className={"text-lg"}>Why Choose Us-----</span>
@@ -326,18 +320,16 @@ const Home = () => {
                                                 <span
                                                     className={"h-[100%] w-[10%] bg-[white] text-red-800 flex items-center justify-start text-4xl"}>0{item.id}</span>
                                                 <span
-                                                    className={"h-[100%] w-[80%] bg-[white] text-black flex items-center justify-start text-4xl "}
+                                                    className={"h-[100%] w-[80%] bg-[white] text-black flex items-center justify-start text-4xl hover:text-orange-400 transition-discrete"}
                                                     onClick={() => handleMouseEnter(index)}>{item.title}</span>
                                             </div>
                                             <div className={"flex justify-start w-full"}>
-                                                <span className={"pt-1 pb-1 ml-17 text-lg tp-whychooseus-animation"}>{hoverIndex === index && homepageData3[index].description}</span>
+                                                <span className={"pt-1 pb-1 ml-20 text-lg tp-whychooseus-animation"}>{hoverIndex === index && homepageData3[index].description}</span>
                                             </div>
                                             <div
                                                 className={`w-[100%] ${hoverIndex === index && 'h-[20rem]'} h-[0] flex items-start justify-center relative overflow-hidden tp-why-image-container`}>
                                                 <img src={homepageData3[hoverIndex].src}
-                                                     className={`w-[95%] h-[95%] object-cover rounded-2xl transition-opacity duration-500 ease-in ${
-                                                         fade ? "opacity-100 tp-whychooseus-animation" : "opacity-0"
-                                                     }`} alt=""/>
+                                                     className={"w-[95%] h-[95%] object-cover rounded-2xl transition-opacity duration-500 ease-in tp-whychooseus-animation"} alt=""/>
                                             </div>
                                         </div>
                                     )
@@ -348,9 +340,7 @@ const Home = () => {
                     <div
                         className={"tp-content-whychooseus1-right w-[50%] h-[40rem] flex items-start justify-center relative overflow-hidden home-animation-6"}>
                         <img src={homepageData3[hoverIndex].src}
-                             className={`min-w-[100%] h-[100%]  rounded-3xl transition-opacity duration-500 ease-in object-cover ${
-                                 fade ? "opacity-100 tp-whychooseus-animation-img" : "opacity-0"
-                             }`} alt=""/>
+                             className={`min-w-[100%] h-[100%]  rounded-3xl transition-opacity duration-500 ease-in object-cover opacity-100 tp-whychooseus-animation-img`} alt=""/>
                     </div>
                 </div>
             </div>
