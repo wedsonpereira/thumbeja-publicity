@@ -3,9 +3,7 @@ import {Link} from 'react-router-dom'
 import "./home.css"
 import Header from "../header/Header.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faArrowUp, faCheck} from "@fortawesome/free-solid-svg-icons";
-import banner from "/src/assets/Images/20943546.jpg";
-// import data from "/src/assets/JsonData/data1.jsx"
+import {faCheck} from "@fortawesome/free-solid-svg-icons";
 import Footer from "../Footer/Footer.jsx";
 import {homepageData2, homePageData, homepageData3, homepageData4} from "../../assets/JsonData/HomePageData.jsx";
 import featureImg from '/src/assets/Images/features.png'
@@ -20,7 +18,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 import 'swiper/css/zoom';
 import {useGSAP} from "@gsap/react";
-import TotalClients from "./TotalClients.jsx";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination"
+
+import carousal1 from "../../assets/Images/carousal1.jpg"
+
 
 
 gsap.registerPlugin(ScrollTrigger)
@@ -44,7 +48,7 @@ const Home = () => {
     useEffect(() => {
         let ctx=gsap.context(()=>{
             gsap.from('.tp-whychooseus-animation',{x:-50,opacity:0});
-            gsap.from('.tp-whychooseus-animation-img',{x:0,scale:0,ease:'bounce.out'});
+            gsap.from('.tp-whychooseus-animation-img',{x:0,scale:0});
         })
 
         return () => ctx.revert()
@@ -119,28 +123,31 @@ const Home = () => {
     return (
         <>
             <Header/>
-            <div className={'tp-home w-full bg-[#fefdf7] flex gap-1 flex-col'}>
-                <div className={"tp-box-1 flex items-center justify-center"}>
-                    <span
-                        className={"tp-home-header-1 text-[5em] text-center font-bold p-2 text-[#091e42] home-animation-1"}>
-                    Transform your business with digital marketing solutions
-                    </span>
-                </div>
-                <div className={"w-max m-auto mt-0 mb-0 flex items-center justify-center flex-col"}>
-                    <Link to={"/services"}
-                          className={"flex tp-home-header-btn gap-3 home-animation-1  bg-[#091e42] p-6 rounded-4xl text-amber-50 cursor-pointer font-bold hover:bg-[#091e68]"}>
-                        <span className={""}>
-                             Explore Our Services
-                        </span>
-                        <span className={""}>
-                            <FontAwesomeIcon className={"rotate-45"} icon={faArrowUp}/>
-                        </span>
-                    </Link>
-                </div>
-                <div className={"tp-box-3"}>
-                    <div className={"tp-home-img-1"}>
-                        <img src={banner} alt="banner" className={"banner object-cover home-animation-1"}/>
-                    </div>
+            <div className="tp-home w-full flex flex-col">
+                <div className="relative w-[100% ">
+                    <Swiper
+                        modules={[Navigation, Pagination, Autoplay]}
+                        spaceBetween={30}
+                        slidesPerView={1}
+                        navigation
+                        pagination={{ clickable: true }}
+                        autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        loop
+                        className="h-[50rem]">
+                        {/* Slide 1 */}
+
+                        <SwiperSlide className="relative">
+                            <img
+                                src={carousal1}
+                                alt="Printing"
+                                className="w-full h-[50rem] object-cover"
+                            />
+                            <div className="absolute inset-0 flex items-center justify-center flex-col bg-black/40 gap-4">
+                                <h1 className="text-white text-5xl font-bold">Printing</h1>
+                                <p className={"w-[60%] text-center  text-white"}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, ipsum, voluptatum! Aliquid amet architecto assumenda commodi cupiditate dignissimos, dolor, eum facere id ipsa nulla odit provident quas soluta tempore? Ab!</p>
+                            </div>
+                        </SwiperSlide>
+                    </Swiper>
                 </div>
             </div>
             {/*1st content starting*/}

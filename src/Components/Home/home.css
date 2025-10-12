@@ -1,5 +1,5 @@
 .tp-home{
-    min-height: 20rem;
+    min-height: 40rem;
 }
 
 
@@ -12,19 +12,18 @@
 }
 
 .tp-home-img-1 {
-    width: 50rem;
-    /*border: 1px solid red;*/
-    position: relative;
-    z-index: 1;
-
+    max-width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    /*border:1px solid red;*/
 }
 
 .banner {
-    display: block;
     max-width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
-    /*border: 1px solid red;*/
+    /*border:1px solid red;*/
 }
 
 
