@@ -8,6 +8,8 @@ import img2 from "../CarousalImages/img2.png"
 import img3 from "../CarousalImages/img3.png"
 import img4 from "../CarousalImages/img4.png"
 import img5 from "../CarousalImages/img5.png"
+import img6 from "../CarousalImages/img6.png"
+import img7 from "../CarousalImages/img7.png"
 import {faDiceOne,faDiceTwo,faDiceThree} from "@fortawesome/free-solid-svg-icons";
 
 const homePageData=[
@@ -162,32 +164,44 @@ const homeherodata = [
     {
         id: 1,
         text: 'Printing and Branding Solutions',
-        description:'Hello World',
+        description:'Comprehensive printing services including custom branding materials like logos, banners, and promotional items to elevate your business identity.',
         src:img1
     },
     {
         id: 2,
         text: 'Website and Software Development(SEO)',
-        description:'Hello World',
+        description:'Full-stack web and software development with integrated SEO optimization to build responsive sites that rank high and drive organic traffic.',
         src:img2
     },
     {
         id: 3,
         text: 'Social Media Marketing',
-        description:'Hello World',
+        description:'Strategic social media campaigns to grow your audience, boost engagement, and convert followers into loyal customers across platforms.',
         src:img3
     },
     {
         id: 4,
         text: 'Customer Relationship Management',
-        description:'Hello World',
+        description:'Streamlined CRM tools to manage leads, track interactions, and nurture customer relationships for improved retention and sales growth.',
         src:img4
     },
     {
         id: 5,
         text: 'Digital Marketing',
-        description:'Hello World',
+        description:'End-to-end digital strategies encompassing PPC, email marketing, and content creation to maximize online visibility and ROI.',
         src:img5
+    },
+    {
+        id: 6,
+        text: 'Outdoor Marketing',
+        description:'Promoting products via billboards, posters, and signage in public spaces for visibility.',
+        src:img6
+    },
+    {
+        id: 7,
+        text: 'Digital Marketing',
+        description:'Planning, organizing, and executing events from concept to evaluation for satisfaction.',
+        src:img7
     },
 ]
 

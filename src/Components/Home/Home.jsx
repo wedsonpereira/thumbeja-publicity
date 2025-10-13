@@ -138,7 +138,7 @@ const Home = () => {
                                         <img
                                             src={item.src}
                                             alt={item.text}
-                                            className="w-full h-[50rem] object-cover"
+                                            className="w-full h-[50rem] object-cover brightness-60"
                                         />
                                         <div className="absolute inset-0 flex items-center justify-center flex-col bg-black/40 gap-4">
                                             <h1 className="text-white text-6xl text-center font-bold w-[100%] ">{item.text}</h1>
