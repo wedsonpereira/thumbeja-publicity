@@ -116,7 +116,6 @@ const Home = () => {
         });return () => ctx.revert()
     }, [Index])
 
-
     return (
         <>
             <Header/>
@@ -142,8 +141,8 @@ const Home = () => {
                                             className="w-full h-[50rem] object-cover"
                                         />
                                         <div className="absolute inset-0 flex items-center justify-center flex-col bg-black/40 gap-4">
-                                            <h1 className="text-white text-5xl font-bold">{item.text}</h1>
-                                            <p className={"w-[60%] text-center  text-white"}>{item.description}</p>
+                                            <h1 className="text-white text-6xl text-center font-bold w-[100%] ">{item.text}</h1>
+                                            <p className={"w-[60%] text-center text-2xl text-white"}>{item.description}</p>
                                         </div>
                                     </SwiperSlide>
                                 )

@@ -3,12 +3,12 @@ import Business2 from "../Images/BusinessImages/Business2.jpg"
 import Business3 from "../Images/BusinessImages/Business3.jpg"
 import Business4 from "../Images/BusinessImages/Business4.jpg"
 import Business5 from "../Images/BusinessImages/Business5.jpg"
-import carousal1 from '../Images/carousal1.jpg'
-import carousal2 from '../Images/carousal2.jpg/'
-import carousal3 from '../Images/carousal3.jpg/'
-
+import img1 from "../CarousalImages/img1.png"
+import img2 from "../CarousalImages/img2.png"
+import img3 from "../CarousalImages/img3.png"
+import img4 from "../CarousalImages/img4.png"
+import img5 from "../CarousalImages/img5.png"
 import {faDiceOne,faDiceTwo,faDiceThree} from "@fortawesome/free-solid-svg-icons";
-
 
 const homePageData=[
     {
@@ -161,21 +161,33 @@ const homepageData4 = [
 const homeherodata = [
     {
         id: 1,
-        text: 'Hello',
+        text: 'Printing and Branding Solutions',
         description:'Hello World',
-        src: carousal1
+        src:img1
     },
     {
         id: 2,
-        text: 'Hello',
+        text: 'Website and Software Development(SEO)',
         description:'Hello World',
-        src: carousal2
+        src:img2
     },
     {
         id: 3,
-        text: 'Hello',
+        text: 'Social Media Marketing',
         description:'Hello World',
-        src: carousal3
+        src:img3
+    },
+    {
+        id: 4,
+        text: 'Customer Relationship Management',
+        description:'Hello World',
+        src:img4
+    },
+    {
+        id: 5,
+        text: 'Digital Marketing',
+        description:'Hello World',
+        src:img5
     },
 ]
 
