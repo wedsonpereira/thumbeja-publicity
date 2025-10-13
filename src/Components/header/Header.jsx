@@ -53,7 +53,7 @@ const Header = () => {
             <div className={"tp-header-nav tp-header-right"}>
                 <Link to="/contact">
                     <button
-                        className={"p-4 font-bold border-2 bg-[#3a1f85e3] cursor-pointer text-white rounded-full  border-none outline-none hover:bg-[#1e0e4de3] transition"}>
+                        className={"p-4 font-bold border-2 bg-blue-500 cursor-pointer text-white rounded-full  border-none outline-none hover:bg-blue-700 transition"}>
                         Contact Us
                     </button>
                 </Link>

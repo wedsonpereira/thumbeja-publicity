@@ -44,7 +44,7 @@ const Career = () => {
             <div className={"tp-career-main h-max flex flex-col  items-center bg-[#fefdf7] pb-8 gap-10"}>
                 <div className={"tp-career0 w-[70%] text-center flex flex-col h-max gap-5 pt-20 items-center tp-career-animation-1"}>
                     <span>------Career Page-------</span>
-                    <span className={"text-5xl font-semibold text-[#130059]"}>Let's build something together for the upcoming future</span>
+                    <span className={"text-5xl font-semibold text-blue-500"}>Let's build something together for the upcoming future</span>
                 </div>
                 <div className={"tp-career1 w-[90%] p-2 flex flex-col gap-6 items-start tp-career-animation-1"}>
                     <span>
@@ -60,7 +60,7 @@ const Career = () => {
                             jobData.map((item, index) => {
                                 return (
                                     <button key={index}
-                                            className={`p-3 ${hoverindex===index? "bg-[#000231] text-[#ffffff]" : "bg-[#cbcbcb] text-[#091e42] "} w-max rounded-3xl cursor-pointer hover:scale-105 transition border-[.2] text-lg`}
+                                            className={`p-3 ${hoverindex===index? "bg-blue-500 text-[#ffffff]" : "bg-[#cbcbcb] text-[#091e42] "} w-max rounded-3xl cursor-pointer hover:scale-105 transition border-[.2] text-lg`}
                                             onClick={() => updateContent(index)}>{item.title}</button>
                                 )
                             })
@@ -68,7 +68,7 @@ const Career = () => {
                     </div>
                     <div className={"w-[100%] transition h-max"}>
                         {/* Job Title */}
-                        <h1 className="text-4xl pt-8 font-bold text-[#091e42] mb-4 tp-career-animation-whileclick">{jobData[hoverindex].title}</h1>
+                        <h1 className="text-4xl pt-8 font-bold mb-4 tp-career-animation-whileclick">{jobData[hoverindex].title}</h1>
 
                         {/* Loop through sections */}
                         {jobData[hoverindex].sections.map((section, secIndex) => (
