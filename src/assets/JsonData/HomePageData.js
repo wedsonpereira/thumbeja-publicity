@@ -3,6 +3,9 @@ import Business2 from "../Images/BusinessImages/Business2.jpg"
 import Business3 from "../Images/BusinessImages/Business3.jpg"
 import Business4 from "../Images/BusinessImages/Business4.jpg"
 import Business5 from "../Images/BusinessImages/Business5.jpg"
+import carousal1 from '../Images/carousal1.jpg'
+import carousal2 from '../Images/carousal2.jpg/'
+import carousal3 from '../Images/carousal3.jpg/'
 
 import {faDiceOne,faDiceTwo,faDiceThree} from "@fortawesome/free-solid-svg-icons";
 
@@ -154,4 +157,29 @@ const homepageData4 = [
         description:"We track key metrics using tools like Google Analytics to evaluate campaign success against your objectives. We identify what's working and what isn't, then iterate by refining strategies, reallocating budgets, and testing new approaches for continuous improvement.",
     },
 ]
-export {homePageData,homepageData2,homepageData3,homepageData4};
+
+const homeherodata = [
+    {
+        id: 1,
+        text: 'Hello',
+        description:'Hello World',
+        src: carousal1
+    },
+    {
+        id: 2,
+        text: 'Hello',
+        description:'Hello World',
+        src: carousal2
+    },
+    {
+        id: 3,
+        text: 'Hello',
+        description:'Hello World',
+        src: carousal3
+    },
+]
+
+
+
+
+export {homePageData,homepageData2,homepageData3,homepageData4,homeherodata};

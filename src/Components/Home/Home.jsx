@@ -5,7 +5,7 @@ import Header from "../header/Header.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheck} from "@fortawesome/free-solid-svg-icons";
 import Footer from "../Footer/Footer.jsx";
-import {homepageData2, homePageData, homepageData3, homepageData4} from "../../assets/JsonData/HomePageData.jsx";
+import {homepageData2, homePageData, homepageData3, homepageData4,homeherodata} from "../../assets/JsonData/HomePageData.js";
 import featureImg from '/src/assets/Images/features.png'
 import processImg1 from '/src/assets/Images/processImg1.jpg'
 import processImg2 from '/src/assets/Images/processImg2.jpg'
@@ -22,10 +22,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination"
-
-import carousal1 from "../../assets/Images/carousal1.jpg"
-import homeHeroData from "../../assets/JsonData/HomeHeroData.jsx";
-
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -56,24 +52,24 @@ const Home = () => {
 
 
     useGSAP(() => {
-        gsap.from(".home-animation-1",
-            {
-                x: -100,
-                opacity: 0,
-                duration: 1,
-                stagger: 0.2,
-                ease:'power1.Out',
-            })
+        // gsap.from(".home-animation-1",
+        //     {
+        //         x: -100,
+        //         opacity: 0,
+        //         duration: 1,
+        //         stagger: 0.2,
+        //         ease:'power1.Out',
+        //     })
 
-        gsap.from(".home-animation-2", {
-            scrollTrigger: {
-                trigger: ".home-animation-2",
-                toggleActions:'restart none none reverse',
-                start: 'bottom 90%'
-
-
-            }, stagger: 0.2, duration: 1, x: -100, opacity: 0
-        })
+        // gsap.from(".home-animation-2", {
+        //     scrollTrigger: {
+        //         trigger: ".home-animation-2",
+        //         toggleActions:'restart none none reverse',
+        //         start: 'bottom 90%'
+        //
+        //
+        //     }, stagger: 0.2, duration: 1, x: -100, opacity: 0
+        // })
 
         gsap.from(".home-animation-3", {
             scrollTrigger: {
@@ -120,6 +116,7 @@ const Home = () => {
         });return () => ctx.revert()
     }, [Index])
 
+
     return (
         <>
             <Header/>
@@ -135,14 +132,13 @@ const Home = () => {
                         loop
                         className="h-[50rem]">
                         {/* Slide 1 */}
-
                         {
-                            homeHeroData.map((item, index) => {
+                              homeherodata.map((item,index) => {
                                 return (
-                                    <SwiperSlide className="relative">
+                                    <SwiperSlide key={index} className="relative">
                                         <img
-                                            src={carousal1}
-                                            alt="Printing"
+                                            src={item.src}
+                                            alt={item.text}
                                             className="w-full h-[50rem] object-cover"
                                         />
                                         <div className="absolute inset-0 flex items-center justify-center flex-col bg-black/40 gap-4">
@@ -152,8 +148,8 @@ const Home = () => {
                                     </SwiperSlide>
                                 )
                             })
-                        }
 
+                        }
                     </Swiper>
                 </div>
             </div>
