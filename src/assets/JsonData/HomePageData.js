@@ -199,7 +199,7 @@ const homeherodata = [
     },
     {
         id: 7,
-        text: 'Digital Marketing',
+        text: 'Event Management',
         description:'Planning, organizing, and executing events from concept to evaluation for satisfaction.',
         src:img7
     },
