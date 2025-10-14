@@ -115,7 +115,7 @@ const Home = () => {
             <div className="tp-home w-full flex flex-col">
                 <div className="relative w-[100%] h-[53rem]">
                     <Swiper
-                        modules={[Navigation, Pagination, Autoplay]}
+                        modules={[Pagination, Autoplay]}
                         spaceBetween={30}
                         slidesPerView={1}
                         navigation

@@ -24,7 +24,7 @@ const servicesData = [
         id: 2,
         svg:svg2,
         contentH: "Printing",
-        contentDesc: "High-quality printing services for corporate stationery (visiting cards, letterheads, envelopes, billbooks), marketing collaterals (pamphlets, brochures, posters, catalogues, danglers, sticker sheets), event & personal branding (invitations, ID cards, badges), merchandise (mugs, t-shirts, mementos), signage & display (name plates, boards), and other materials to showcase your business professionally.",
+        contentDesc: "Premium printing solutions for every need — corporate stationery, marketing collaterals, event branding, merchandise, and signage. From business cards to brochures, invitations to mugs, we deliver high-quality prints that elevate your brand and leave a lasting impression.",
     },
     {
         id: 3,
