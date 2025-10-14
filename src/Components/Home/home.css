@@ -1,5 +1,5 @@
 .tp-home{
-    min-height: 40rem;
+    min-height: 30rem;
 }
 
 
@@ -105,8 +105,6 @@
     /*background: #ffa966;*/
     border-radius: 50%;
     border: 2px dashed rgba(69, 54, 187, 0.79);
-    animation: bouncetoAfter 1s infinite alternate;
-
 
 }
 
@@ -140,6 +138,29 @@
 .tp-why-image-container{
     display: none;
 }
+
+
+ .arrow-down {
+     width: 2rem;
+     height: 2rem;
+     border-left: 3px solid #4b8de3;
+     border-bottom: 3px solid #4b8de3;
+    transform: rotate(-45deg);
+
+ }
+
+
+ .tp-hero-drag-animation{
+     transition: 200ms ease-in-out;
+     animation: bouncetoAfter 1s infinite alternate;
+ }
+
+ @keyframes bouncetoAfter {
+     from {
+         transform: translateY(-1.5rem);
+     }
+ }
+
 
 @media (max-width: 800px) {
     /*first container*/
