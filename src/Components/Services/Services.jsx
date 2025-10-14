@@ -77,9 +77,9 @@ const Services = () => {
                                                 />
                                             </span>
                                         </div>
-                                        <div className="col-span-2 text-white w-[100%] p-7 flex flex-col items-start justify-end relative z-10">
-                                            <span className={"services-card-header text-3xl w-[30%] p-2"}>{service.contentH}</span>
-                                            <p className={"services-card-desc p-2"}>{service.contentDesc}</p>
+                                        <div className="col-span-2 text-white w-[100%] p-6 flex flex-col items-start justify-end relative z-10">
+                                            <span className={"services-card-header text-3xl w-[100%] p-2"}>{service.contentH}</span>
+                                            <p className={"services-card-desc p-2 text-[0.8rem]"}>{service.contentDesc}</p>
                                         </div>
                                     </div>
                                     {/*bg image*/}

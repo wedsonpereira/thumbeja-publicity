@@ -52,14 +52,6 @@ const Home = () => {
 
 
     useGSAP(() => {
-        // gsap.from(".home-animation-1",
-        //     {
-        //         x: -100,
-        //         opacity: 0,
-        //         duration: 1,
-        //         stagger: 0.2,
-        //         ease:'power1.Out',
-        //     })
 
         // gsap.from(".home-animation-2", {
         //     scrollTrigger: {
@@ -116,20 +108,21 @@ const Home = () => {
         });return () => ctx.revert()
     }, [Index])
 
-    return (
+
+        return (
         <>
             <Header/>
             <div className="tp-home w-full flex flex-col">
-                <div className="relative w-[100% ">
+                <div className="relative w-[100%] h-[53rem]">
                     <Swiper
-                        modules={[Navigation, Pagination, Autoplay]}
+                        modules={[Pagination, Autoplay]}
                         spaceBetween={30}
                         slidesPerView={1}
                         navigation
                         pagination={{ clickable: true }}
-                        autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        autoplay={{ delay: 4000, disableOnInteraction: false }}
                         loop
-                        className="h-[50rem]">
+                        className="h-[100%]">
                         {/* Slide 1 */}
                         {
                               homeherodata.map((item,index) => {
@@ -138,11 +131,16 @@ const Home = () => {
                                         <img
                                             src={item.src}
                                             alt={item.text}
-                                            className="w-full h-[50rem] object-cover brightness-60"
+                                            className="w-[100%] h-[100%] object-cover brightness-60"
                                         />
                                         <div className="absolute inset-0 flex items-center justify-center flex-col bg-black/40 gap-4">
                                             <h1 className="text-white text-6xl text-center font-bold w-[100%] ">{item.text}</h1>
                                             <p className={"w-[60%] text-center text-2xl text-white"}>{item.description}</p>
+                                        </div>
+                                        <div className={"absolute w-[100%] bottom-[5rem] flex items-center justify-center "}>
+                                            <a href={"#container-services"} className={"p-7 rounded-full flex flex-col items-center justify-center cursor-pointer tp-hero-drag-animation"}>
+                                                <div className="arrow-down"></div>
+                                            </a>
                                         </div>
                                     </SwiperSlide>
                                 )
@@ -156,9 +154,9 @@ const Home = () => {
 
             {/*2st content starting*/}
             <div
-                className={"tp-content-services h-max flex items-center w-[90%] m-auto mt-0 pb-10 pt-10 mb-0 flex-col justify-center gap-10"}>
+                className={"tp-content-services h-max flex items-center w-[90%] m-auto mt-0 pb-10 pt-10 mb-0 flex-col justify-center gap-10" } id={"container-services"}>
                 <div className={"tp-content-header-2 h-max p-2 flex items-center justify-evenly gap-10"}>
-                    <div className={"w-[45%] h-[10rem] p-2 flex flex-col  justify-center gap-10 home-animation-3"}>
+                        <div className={"w-[45%] h-[10rem] p-2 flex flex-col  justify-center gap-10 home-animation-3"}>
                         <span className={"text-lg home-animation-3"}>Our Services -------------------</span>
                         <span className={"text-5xl font-semibold home-animation-3"}>What we can do for <br/><span
                             className={"text-[#5439a3]"}>our clients</span></span>
