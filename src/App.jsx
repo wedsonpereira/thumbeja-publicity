@@ -6,7 +6,7 @@ import Services from "./Components/Services/Services.jsx";
 import Career from "./Components/Career/Career.jsx";
 import TermsConditions from "./Components/TermsConditions/Terms&Conditions.jsx";
 import ScrollToTop from "./Components/ScrollToTop.jsx";
-import {snowflakeCursor} from "./Components/MouseHover/SnowFlake.js";
+// import {snowflakeCursor} from "./Components/MouseHover/SnowFlake.js";
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     // }, []);
 
 
-    snowflakeCursor(document.body);
+    // snowflakeCursor(document.body);
 
     return (
         <>
