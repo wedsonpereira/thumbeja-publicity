@@ -27,10 +27,10 @@ const Footer = () => {
                             <span className={"text-4xl"}>Reach us @</span>
                         </div>
                         <div className={"flex gap-3 border-1 w-max p-2 rounded"}>
-                            <a href="https://www.facebook.com/share/17UorZadV3/?mibextid=wwXIfr"><FontAwesomeIcon icon={faFacebook} size="lg"/></a>
-                            <a href="https://www.instagram.com/thumbeja_publicity?igsh=NGF3OTc1bTM1czds"><FontAwesomeIcon icon={faInstagram} size="lg"/></a>
-                            <a href="https://wa.me/916366983700"><FontAwesomeIcon icon={faWhatsapp} size="lg"/></a>
-                            <a href="https://linkedin.com/in/thumbeja-publicity-267636387"><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
+                            <a href="https://www.facebook.com/share/17UorZadV3/?mibextid=wwXIfr" target={"_blank"}><FontAwesomeIcon icon={faFacebook} size="lg"/></a>
+                            <a href="https://www.instagram.com/thumbeja_publicity?igsh=NGF3OTc1bTM1czds" target={"_blank"}><FontAwesomeIcon icon={faInstagram} size="lg"/></a>
+                            <a href="https://wa.me/916366983700" target={"_blank"}><FontAwesomeIcon icon={faWhatsapp} size="lg"/></a>
+                            <a href="https://linkedin.com/in/thumbeja-publicity-267636387" target={"_blank"}><FontAwesomeIcon icon={faLinkedin} size="lg"/></a>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ const Footer = () => {
             <div className={"h-max w-full flex flex-center justify-center items-center"}>
                 <hr/>
                 <div className={"h-[5rem] flex flex-center justify-center items-center text-center"}>
-                    <a href={"tel:7483713076"} alt={"Developed by Wedson"} className={"text-lg tp-copyright"}>© 2025 Thumbeja Publicity. All rights reserved.</a>
+                    <a href={"tel:+917483713076"} alt={"Developed by Wedson"} className={"text-lg tp-copyright"}>© 2025 Thumbeja Publicity. All rights reserved.</a>
                 </div>
             </div>
         </div>

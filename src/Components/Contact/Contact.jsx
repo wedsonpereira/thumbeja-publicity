@@ -146,16 +146,16 @@ const Contact = () => {
                     </div>
                     <hr className={"opacity-55 w-[100%] mt-8 mb-8 tp-horizontal-line  tp-contact-scroll-animation-1"}/>
                     <div className={"tp-contact-sc-lk flex items-center gap-2 pt-5 tp-contact-scroll-animation-1"}>
-                        <a href={"https://www.facebook.com/share/17UorZadV3/?mibextid=wwXIfr"} className={"p-2 tp-contact-sc-hover-effect"}>
+                        <a href={"https://www.facebook.com/share/17UorZadV3/?mibextid=wwXIfr"} target={"_blank"} className={"p-2 tp-contact-sc-hover-effect"}>
                             <FontAwesomeIcon size={"2xl"} className={"cursor-pointer"} icon={faFacebook}/>
                         </a>
-                        <a href={"https://www.instagram.com/thumbeja_publicity?igsh=NGF3OTc1bTM1czds"} className={"p-2 tp-contact-sc-hover-effect"}>
+                        <a href={"https://www.instagram.com/thumbeja_publicity?igsh=NGF3OTc1bTM1czds"} target={"_blank"} className={"p-2 tp-contact-sc-hover-effect"}>
                               <FontAwesomeIcon size={"2xl"} icon={faInstagram}/>
                         </a>
-                        <a href={"https://wa.me/916366983700"} className={"p-2 tp-contact-sc-hover-effect"}>
+                        <a href={"https://wa.me/916366983700"} target={"_blank"} className={"p-2 tp-contact-sc-hover-effect"}>
                             <FontAwesomeIcon size={"2xl"} icon={faWhatsapp}/>
                         </a>
-                        <a href={"https://linkedin.com/in/thumbeja-publicity-267636387"} className={"p-2 tp-contact-sc-hover-effect"}>
+                        <a href={"https://linkedin.com/in/thumbeja-publicity-267636387"} target={"_blank"} className={"p-2 tp-contact-sc-hover-effect"}>
                             <FontAwesomeIcon size={"2xl"} icon={faLinkedin}/>
                         </a>
                     </div>

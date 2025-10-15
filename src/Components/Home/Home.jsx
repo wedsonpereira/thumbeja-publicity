@@ -302,8 +302,7 @@ const Home = () => {
             </div>
 
             {/*Who choose us Container*/}
-            <div
-                className={"tp-content-whychooseus min-h-[30rem] w-[85%] m-auto pt-20 pb-15 flex flex-col gap-7 select-none"}>
+            <div className={"tp-content-whychooseus min-h-[20rem] w-[85%] m-auto pt-20 pb-15 flex flex-col gap-7 select-none"}>
                 <div className={"tp-content-whychooseus0 h-[15rem] w-[100%] flex"}>
                     <div className={"flex w-[50%] flex-col gap-5 justify-center home-animation-6"}>
                         <span className={"text-lg"}>Why Choose Us-----</span>
@@ -315,9 +314,9 @@ const Home = () => {
                         <span className={"text-lg"}>This agency is not just its expertise but a personalized approach that tailors strategies to each clients unique needs.</span>
                     </div>
                 </div>
-                <div className={"tp-content-whychooseus1 flex overflow-hidden h-max gap-10"}>
-                    <div className={"tp-content-whychooseus1-left flex flex-1 justify-start h-[40rem]"}>
-                        <div className={"w-[100%] h-[40rem] object-cover flex flex-col gap-6 home-animation-6"}>
+                <div className={"tp-content-whychooseus1 flex overflow-hidden h-max gap-10 "}>
+                    <div className={"tp-content-whychooseus1-left flex h-[40rem]"}>
+                        <div className={"w-[100%] object-cover flex flex-col gap-4 home-animation-6 justify-evenlyh-[100%]"}>
                             {
                                 homepageData3.map((item, index) => {
                                     return (
