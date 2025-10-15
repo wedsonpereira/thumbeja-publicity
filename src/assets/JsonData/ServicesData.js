@@ -19,12 +19,15 @@ const servicesData = [
         svg:svg1,
         contentH: "Digital Marketing",
         contentDesc: "Promote your brand online through Search Engine Marketing (Google Ads & SEO) to appear at the top of search results, drive quality traffic, increase visibility, and boost conversions with targeted strategies.",
+        path:"/services/digitalmarketing",
     },
     {
         id: 2,
         svg:svg2,
         contentH: "Printing",
         contentDesc: "Premium printing solutions for every need — corporate stationery, marketing collaterals, event branding, merchandise, and signage. From business cards to brochures, invitations to mugs, we deliver high-quality prints that elevate your brand and leave a lasting impression.",
+        path:"/services/digitalmarketing",
+
     },
     {
         id: 3,

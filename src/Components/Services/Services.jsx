@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowRight, faArrowUp} from "@fortawesome/free-solid-svg-icons";
 import mountain from "/src/assets/Images/Gemini_Generated_Image_su9pixsu9pixsu9p.png"
 import servicesData from "../../assets/JsonData/ServicesData.js";
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import gsap from "gsap";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {useGSAP} from "@gsap/react";
@@ -68,14 +68,14 @@ const Services = () => {
                                             <img src={service.svg} alt="Service Image" className={"service-container-inner-img"} />
                                         </div>
                                         <div className="flex items-center h-full justify-center">
-                                            <span className={"w-[30%] h-[42%] bg-[#ffffff]  rounded-full flex items-center justify-center"}>
+                                            <Link className={"w-[30%] h-[42%] bg-[#ffffff]  rounded-full flex items-center justify-center"} to={""}>
                                                 <FontAwesomeIcon
                                                     icon={faArrowRight}
                                                     // size="2xl"
                                                     className={""}
                                                     style={{ transform: "rotate(-45deg)", color: "black" }}
                                                 />
-                                            </span>
+                                            </Link>
                                         </div>
                                         <div className="col-span-2 text-white w-[100%] p-6 flex flex-col items-start justify-end relative z-10">
                                             <span className={"services-card-header text-3xl w-[100%] p-2"}>{service.contentH}</span>
