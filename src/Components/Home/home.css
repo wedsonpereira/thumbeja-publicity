@@ -94,9 +94,6 @@
     /*background: #ffa966;*/
     border-radius: 50%;
     border: 2px dashed rgba(69, 54, 187, 0.83);
-    animation: bouncetoAfter 1s infinite alternate;
-
-
 }
 
 .tp-process-3 {
@@ -472,7 +469,6 @@
         align-items: center;
         justify-content: center;
         /*border: 1px solid red;*/
-        height:100%;
         margin: 3rem auto;
         width: 93%;
         .tp-content-whychooseus0{
@@ -492,6 +488,7 @@
         .tp-content-whychooseus1{
             width: 100%;
             /*border: #16116b solid 1px;*/
+            min-height:50rem;
             .tp-content-whychooseus1-left{
                 width: 100%;
                 .tp-content-whychooseus1-left-head div:first-child{

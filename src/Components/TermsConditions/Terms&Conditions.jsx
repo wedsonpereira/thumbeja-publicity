@@ -8,24 +8,24 @@ const TermsConditions = () => {
     return (
         <>
             <Header />
-            <div className={"terms-conditions-main mt-[7em] pt-20 pb-12 flex items-center flex-col gap-1 h-max bg-[#fefdf7]"}>
-                <div className={"w-[90%] flex flex-col gap-10 items-start m-auto"}>
-                    <div className={"text-5xl text-[#000213] font-semibold"}>
+            <div className={"terms-conditions-main pt-10 pb-12 flex items-center flex-col gap-1 h-max bg-[#fefdf7]"}>
+                <div className={"w-[90%] flex flex-col gap-2 items-start m-auto"}>
+                    <div className={"text-3xl text-[#000213] font-semibold"}>
                         <span>Privacy Policy & Terms and Conditions</span>
                     </div>
-                    <div className={"text-2xl"}>
+                    <div className={"text-sm"}>
                         <p>
                             Thumbeja Publicity is committed to protecting your personal information and ensuring transparency in how we operate. By accessing our services, website, or engaging with our publicity and marketing campaigns, you agree to the terms outlined below.
                         </p>
                     </div>
-                    <div className={"text-2xl flex gap-10 p-1"}>
+                    <div className={"text-sm flex gap-2 p-1"}>
                         {privacy.map((item, index) => {
                             return (
                                 <div key={index}>
                                     {/* Loop inside PrivacyPolicy object */}
                                     {Object.entries(item.PrivacyPolicy).map(([section, content], i) => (
                                         <div key={i} className="mb-6 p-1">
-                                            <h2 className="text-xl font-bold mb-2">
+                                            <h2 className="text-sm font-bold mb-2">
                                                 {section.replace(/_/g, " ")}
                                             </h2>
 
@@ -42,18 +42,18 @@ const TermsConditions = () => {
                                                             {subKey.replace(/_/g, " ")}
                                                         </h3>
                                                         {Array.isArray(subVal) ? (
-                                                            <ul className="list-disc list-inside ml-4 p-2">
+                                                            <ul className="list-disc list-inside ml-4 p-1">
                                                                 {subVal.map((point, l) => (
                                                                     <li key={l}>{point}</li>
                                                                 ))}
                                                             </ul>
                                                         ) : (
-                                                            <p>{subVal}</p>
+                                                            <p className={"m-0"}>{subVal}</p>
                                                         )}
                                                     </div>
                                                 ))
                                             ) : (
-                                                <p>{content}</p>
+                                                <p className={"m-0"}>{content}</p>
                                             )}
                                         </div>
                                     ))}
