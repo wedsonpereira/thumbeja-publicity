@@ -5,7 +5,6 @@ import '../../../index.css'
 import DigitalMarketingImg from '../../../assets/Images/DigitalMarketing.png';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheck} from "@fortawesome/free-solid-svg-icons";
-import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 import {services1, services2,services3} from "../../../assets/JsonData/Servicesdata/DigitalMarketing.js";
 const DigitalMarketing = () => {
 
@@ -111,16 +110,21 @@ const DigitalMarketing = () => {
                     style={{
                         backgroundColor: '#1e3a8a', // Light blue (adjust hex/rgb as needed)
                         borderRadius: '8px',
-                        marginTop: '25px',
-                        marginBottom: '30px',
+                        marginTop: '30px',
+                        marginBottom: '60px',
                         maxWidth:'38rem',
                         height:'18rem',
                         margin:'auto',
 
+
                     }}
                 >
-                    <div className="Box " style={{fontSize:"6rem"}}>
-                        <fontAwesomeIcon icon={faQuoteLeft} size="4xl"/>
+                    <div className="Box font-extralight" style={{fontSize: "10rem"}}>
+                        <div className="apostrophe flex w-[100%] text-white h-[5rem] items-center justify-center" >
+                           <span className="h-[100%] w-[100%] text-center ">"</span>
+                        </div>
+                        <div className={" flex flex-1 "}>
+                        </div>
                     </div>
                  
                 </div>
