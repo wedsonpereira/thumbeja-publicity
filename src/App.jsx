@@ -6,13 +6,11 @@ import Services from "./Components/Services/Services.jsx";
 import Career from "./Components/Career/Career.jsx";
 import TermsConditions from "./Components/TermsConditions/Terms&Conditions.jsx";
 import ScrollToTop from "./Components/ScrollToTop.jsx";
-<<<<<<< HEAD
-import {snowflakeCursor} from "./Components/MouseHover/SnowFlake.js";
 import DigitalMarketing from "./Components/Services/DigitalMarketing/DigitalMarketing.jsx";
 import Printing from "./Components/Services/Printing/Printing.jsx";
-=======
+
 // import {snowflakeCursor} from "./Components/MouseHover/SnowFlake.js";
->>>>>>> cd97b3ddf6281e30dbe90ad9d24473205e0c840b
+
 
 
 function App() {
