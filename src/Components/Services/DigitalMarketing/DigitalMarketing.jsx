@@ -6,6 +6,8 @@ import DigitalMarketingImg from '../../../assets/Images/DigitalMarketing.png';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCheck} from "@fortawesome/free-solid-svg-icons";
 import {services1, services2,services3} from "../../../assets/JsonData/Servicesdata/DigitalMarketing.js";
+import Footer from "../../Footer/Footer.jsx";
+import {GetInTouch} from "../Services.jsx";
 const DigitalMarketing = () => {
 
         return (
@@ -23,7 +25,7 @@ const DigitalMarketing = () => {
                         and interactive content.</p>
                 </div>
                 <div className="ImageSection pt-10 max-width-[2000px] min-h-[14rem] ">
-                    <img src={DigitalMarketingImg} className="DigitalMarketingImg w-[90%] rounded-2xl mt-0 mb-0 m-auto"
+                    <img src={DigitalMarketingImg} className="DigitalMarketingImg w-[65%] rounded-2xl mt-0 mb-0 m-auto"
                          alt="Digital Marketing"/>
                 </div>
                 <div>
@@ -106,30 +108,29 @@ const DigitalMarketing = () => {
 
 
                 </div>
-                <div className="bg max-w-10"
-                    style={{
-                        backgroundColor: '#1e3a8a', // Light blue (adjust hex/rgb as needed)
-                        borderRadius: '8px',
-                        marginTop: '30px',
-                        marginBottom: '60px',
-                        maxWidth:'38rem',
-                        height:'18rem',
-                        margin:'auto',
-
-
-                    }}
-                >
-                    <div className="Box font-extralight" style={{fontSize: "10rem"}}>
+                <div className="bg w-[55%] min-h-[20rem] bg-black m-auto mt-5 h-[18rem] rounded-2xl mb-8">
+                    <div className="Box font-extralight  ">
                         <div className="apostrophe flex w-[100%] text-white h-[5rem] items-center justify-center" >
-                           <span className="h-[100%] w-[100%] text-center ">"</span>
-                        </div>
-                        <div className={" flex flex-1 "}>
+                           <span className="h-[100%] w-[100%] text-center  mt-24" style={{fontFamily:"Passion One", fontSize: "10rem",transform: "rotate(180deg)"}}>"</span>
                         </div>
                     </div>
-                 
+                            <div className="text flex  w-[90%] m-auto text-white items-center justify-center text-center" style={{ fontSize: "1.1em"}}>
+                                "This platform has not only simplified our accounting processes but also given us valuable insights into our financial health. The intuitive interface and robust reporting tools have made a significant difference in our decision-making."
+                            </div>
                 </div>
-
+                <div className="DigitalMarketingboxN max-w-300  m-auto ">
+                    <h1 className="heading pl-[2.5rem] "
+                        style={{textAlign: 'left', fontWeight: 'bold', fontSize: "2.3rem"}}> Branding & marketing optimizations and ongoing support
+                    </h1>
+                    <p className="paragraph1 leading-8 mt-4 pl-[2.5rem] " style={{textAlign: 'left'}}>At Thumbeja Publicity, we specialize in crafting unique brand identities that resonate with target audiences, driving meaningful connections and long-term growth. Our branding and marketing optimization services leverage cutting-edge strategies to enhance online visibility, refine messaging, and amplify engagement across digital channels, ensuring businesses stand out in competitive markets.
+                    </p>
+                    <p className="paragraph2 leading-8 pl-[2.5rem] pt-[0.9rem] " style={{textAlign: 'left'}}>We provide comprehensive ongoing support, from continuous performance audits and adaptive campaign tweaks to dedicated relationship management, helping clients evolve their brands without disruption. Whether refreshing an established identity or scaling new initiatives, our tailored approach empowers businesses to thrive, proving that strategic rebrands are about innovation, not just recovery.
+                    </p>
+                </div>
+                <GetInTouch />
+                <Footer/>
             </div>
+
         );
     };
 
