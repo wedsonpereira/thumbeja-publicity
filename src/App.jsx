@@ -9,7 +9,7 @@ import ScrollToTop from "./Components/ScrollToTop.jsx";
 import DigitalMarketing from "./Components/Services/DigitalMarketing/DigitalMarketing.jsx";
 import Printing from "./Components/Services/Printing/Printing.jsx";
 
-// import {snowflakeCursor} from "./Components/MouseHover/SnowFlake.js";
+import {snowflakeCursor} from "./Components/MouseHover/SnowFlake.js";
 
 
 
@@ -26,7 +26,7 @@ function App() {
     // }, []);
 
 
-    // snowflakeCursor(document.body);
+    snowflakeCursor(document.body);
 
     return (
         <>
