@@ -8,25 +8,13 @@ import TermsConditions from "./Components/TermsConditions/Terms&Conditions.jsx";
 import ScrollToTop from "./Components/ScrollToTop.jsx";
 import DigitalMarketing from "./Components/Services/DigitalMarketing/DigitalMarketing.jsx";
 import Printing from "./Components/Services/Printing/Printing.jsx";
-
-// import {snowflakeCursor} from "./Components/MouseHover/SnowFlake.js";
+import NotFound from "./Components/NotFound/NotFound.jsx";
+import {snowflakeCursor} from "./Components/MouseHover/SnowFlake.js";
 
 
 
 function App() {
-    // const [isLoading, setIsLoading] = useState(true);
-    //
-    // useEffect(() => {
-    //     // simulate real loading (API, image load, etc.)
-    //     const timer = setTimeout(() => {
-    //         setIsLoading(false);
-    //     }, 1000); // 2 seconds
-    //
-    //     return () => clearTimeout(timer);
-    // }, []);
-
-
-    // snowflakeCursor(document.body);
+    snowflakeCursor(document.body);
 
     return (
         <>
@@ -39,6 +27,7 @@ function App() {
                 <Route path="/info" element={<TermsConditions/>}/>
                 <Route path="/services/digitalmarketing" element={<DigitalMarketing/>}/>
                 <Route path="/services/printing" element={<Printing/>}/>
+                <Route path={"*"} element={<NotFound/>}/>
             </Routes>
         </>
     );
