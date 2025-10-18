@@ -59,9 +59,6 @@ function App() {
                 <Route path="/services/videomarketing" element={<VideoMarketing/>}/>
                 <Route path="/services/websitesoftwaredevelopment" element={<WebsiteSoftwareDevelopment/>}/>
                 <Route path="/services/whatsappchatbot" element={<WhatsappChatbot/>}/>
-
-
-
             </Routes>
         </>
     );
