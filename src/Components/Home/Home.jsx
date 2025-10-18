@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom'
 import "./home.css"
 import Header from "../header/Header.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -19,7 +18,8 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/zoom';
 import {useGSAP} from "@gsap/react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";import "swiper/css";
+import {Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination"
 

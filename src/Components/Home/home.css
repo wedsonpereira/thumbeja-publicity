@@ -47,6 +47,8 @@
     }
 }
 
+ 
+
 
 .tp-left-compo {
     width: 40%;
@@ -234,6 +236,8 @@
     .tp-card:hover {
         background: linear-gradient(67deg, #e37c7c, #16116b);
     }
+
+    
 
 
     /* third container*/
