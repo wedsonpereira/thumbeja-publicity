@@ -108,13 +108,13 @@ const DigitalMarketing = () => {
 
 
                 </div>
-                <div className="bg w-[55%] min-h-[20rem] bg-black m-auto mt-5 h-[18rem] rounded-2xl mb-8">
+                <div className="bg w-[55%] min-h-[20rem] bg-black m-auto mt-5 h-[18rem] rounded-2xl mb-8 flex-wrap">
                     <div className="Box font-extralight  ">
                         <div className="apostrophe flex w-[100%] text-white h-[5rem] items-center justify-center" >
-                           <span className="h-[100%] w-[100%] text-center  mt-24" style={{fontFamily:"Passion One", fontSize: "10rem",transform: "rotate(180deg)"}}>"</span>
+                           <span className="h-[100%] w-[100%] text-center  mt-28" style={{fontFamily:"Passion One", fontSize: "10rem",transform: "rotate(180deg)"}}>"</span>
                         </div>
                     </div>
-                            <div className="text flex  w-[90%] m-auto text-white items-center justify-center text-center" style={{ fontSize: "1.1em"}}>
+                            <div className="text flex  w-[90%] m-auto text-white items-center justify-center text-center mt-8" style={{ fontSize: "1.1em"}}>
                                 "This platform has not only simplified our accounting processes but also given us valuable insights into our financial health. The intuitive interface and robust reporting tools have made a significant difference in our decision-making."
                             </div>
                 </div>

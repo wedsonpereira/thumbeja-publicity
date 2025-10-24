@@ -10,6 +10,7 @@ import DigitalMarketing from "./Components/Services/DigitalMarketing/DigitalMark
 import Printing from "./Components/Services/Printing/Printing.jsx";
 import NotFound from "./Components/NotFound/NotFound.jsx";
 import {snowflakeCursor} from "./Components/MouseHover/SnowFlake.js";
+import GraphicDesign from "./Components/Services/GraphicDesign/GraphicDesign.jsx";
 
 
 
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/career" element={<Career/>}/>
                 <Route path="/info" element={<TermsConditions/>}/>
                 <Route path="/services/digitalmarketing" element={<DigitalMarketing/>}/>
+                <Route path="/services/graphicdesign" element={<GraphicDesign/>}/>
                 <Route path="/services/printing" element={<Printing/>}/>
                 <Route path={"*"} element={<NotFound/>}/>
             </Routes>
