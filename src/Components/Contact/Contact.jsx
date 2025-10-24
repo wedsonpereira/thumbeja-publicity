@@ -1,8 +1,8 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef} from 'react';
 import Header from "../header/Header.jsx";
 import "./contact.css"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import contactdetails from "/src/assets/JsonData/contactDetails.jsx";
+import contactdetails from "../../assets/JsonData/contactDetails.jsx";
 import {faLocationDot, faPhone} from "@fortawesome/free-solid-svg-icons";
 import {faFacebook, faInstagram, faLinkedin, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import Footer from "../Footer/Footer.jsx";
@@ -10,9 +10,8 @@ import gsap from "gsap";
 import {useGSAP} from "@gsap/react";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import {Link} from "react-router-dom";
-import {useForm} from "react-hook-form";
-import useWeb3Forms from "@web3forms/react";
 import toast, {Toaster} from "react-hot-toast";
+import axios from "axios";
 
 gsap.registerPlugin(ScrollTrigger);
 const Contact = () => {
@@ -37,35 +36,38 @@ const Contact = () => {
 
     }, {scope: container});
 
-    const {register, reset, handleSubmit} = useForm();
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        toast("Sending....");
+        const formData = new FormData(event.target);
+        formData.append("access_key", "0108879f-25a4-4d75-b4cb-f4162a4c384e");
 
-    const [isSuccess, setIsSuccess] = useState(false);
+        try{
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: 'POST',
+                body: formData
+            });
 
-    const accessKey = "085ca770-a329-45fd-a838-5061025e036a";
+            const data = await response.json();
+            const {name,email } = data.data;
 
-    const { submit: onSubmit } = useWeb3Forms({
-        access_key: accessKey,
-        settings: {
-            subject: "Website client form submission details",
-            replyto:"email"
-            // ... other settings
-        },
-        onSuccess: (msg, data) => {
-            setIsSuccess(true);
-            // setMessage(msg)
-            toast(msg)
-            console.log("this is data"+data)
-            reset();
-        },
-        onError: (msg, data) => {
-            setIsSuccess(false);
-           // setMessage(msg)
-            toast(msg)
-            console.log(data);
-        },
-    });
+            axios.post("http://localhost:8000/contactform", {name,email}).then((response) => {
+                console.log(response)
+            }).catch((error) => {
+                console.log(error);
+            })
 
+            if (data.success) {
+                toast("Form Submitted Successfully");
+                event.target.reset();
+            } else {
+                toast("Error");
+            }
+        }catch(e){
+            toast("Error",e.message);
+        }
 
+    };
     useGSAP(()=>{
             gsap.from('.tp-contact-scroll-animation-1', {
                 y: -50, duration: 1, opacity: 0, ease: "power1.inOut",
@@ -88,9 +90,6 @@ const Contact = () => {
             })
 
     },[])
-
-    console.log("this is is isSuccess "+isSuccess);
-    // console.log("this is result"+result);
 
     return (<>
             <Header/>
@@ -160,19 +159,18 @@ const Contact = () => {
                         </a>
                     </div>
                 </div>
-                <form className="tp-animation-side-scroll flex w-[40%] flex-col" onSubmit={handleSubmit(onSubmit)}>
+                <form className="tp-animation-side-scroll flex w-[40%] flex-col" onSubmit={onSubmit}>
                     <div className="tp-form-text-fields flex flex-col gap-10 overflow-hidden w-full h-full pr-4 ">
                         <div className="tp-contact-input-box flex flex-col gap-7 h-[70%]">
-                            <input type="text" {...register("name", {required: true})} className="border-1 rounded-2xl tp-contact-scroll-animation-1"
+                            <input type="text" name={"name"}  className="border-1 rounded-2xl tp-contact-scroll-animation-1"
                                    placeholder="Enter name"/>
-                            <input type="text" {...register("company", {required: true})}
-                                   className="border-1 rounded-2xl tp-contact-scroll-animation-1" placeholder="Company name"/>
+                            <input type="text" name={"company"} className="border-1 rounded-2xl tp-contact-scroll-animation-1" placeholder="Company name"/>
                             <input type="tel" data-for="phoneNumber" minLength={10} maxLength={13}
-                                   prefix={"+91"} {...register("number", {required: true})}
+                                   prefix={"+91"} name="phoneNumber"
                                    className="border-1 rounded-2xl tp-contact-scroll-animation-1" placeholder="Phone"/>
-                            <input type="email" {...register("email", {required: true})}
+                            <input type="email" name={"email"}
                                    className="border-1 rounded-2xl tp-contact-scroll-animation-1" placeholder="Email"/>
-                            <textarea rows={3} cols={3} {...register("message", {required: true})}
+                            <textarea rows={3} cols={3} name={"message"}
                                       className="tp-contact-textarea border-1 rounded-2xl tp-contact-scroll-animation-1" placeholder="Message"/>
                         </div>
                         <div className="tp-contact-input-box2 h-max">
@@ -189,7 +187,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </form>
-                <Toaster toastOptions={{style: {background: "black", color: "white"}}} position={"top-center"}/>
+                <Toaster toastOptions={{style: {background: "black", color: "white", textAlign:'center'}}} position={"top-center"}/>
             </div>
             <iframe id={"map"} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7779.3339529053455!2d74.8310431605438!3d12.864773152630576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35bf106d2fe49%3A0x4c9a2d8d669dde46!2sThumbeja%20Publicity!5e0!3m2!1sen!2sin!4v1758909845560!5m2!1sen!2sin"
                     width="600" height="500" className={"w-full tp-contact-scroll-animation-2"} loading={"eager"}
