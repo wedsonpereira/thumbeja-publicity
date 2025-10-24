@@ -12,6 +12,8 @@ import NotFound from "./Components/NotFound/NotFound.jsx";
 import {snowflakeCursor} from "./Components/MouseHover/SnowFlake.js";
 import GraphicDesign from "./Components/Services/GraphicDesign/GraphicDesign.jsx";
 import Dashboard from "./Components/Dashboard/Dashboard.jsx";
+import CustomerRelationshipManagement
+    from "./Components/Services/CustomerRelationshipManagement/CustomerRelationshipManagement.jsx";
 
 
 
@@ -29,6 +31,7 @@ function App() {
                 <Route path="/info" element={<TermsConditions/>}/>
                 <Route path="/services/digitalmarketing" element={<DigitalMarketing/>}/>
                 <Route path="/services/graphicdesign" element={<GraphicDesign/>}/>
+                <Route path="/services/customerrelationshipmanagement" element={<CustomerRelationshipManagement/>}/>
                 <Route path="/services/printing" element={<Printing/>}/>
                 <Route path="/dashboard" element={<Dashboard/>}/>
                 <Route path={"*"} element={<NotFound/>}/>
